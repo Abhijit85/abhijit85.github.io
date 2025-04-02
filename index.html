@@ -1,166 +1,270 @@
-
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Abhijit Chakraborty| Personal Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+            },
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors">
+    <header class="p-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold flex items-center gap-2">
+  <img src="images/abhijit-logo-light.png" alt="Abhijit Chakraborty Logo" class="h-20 block dark:hidden" />
+<img src="images/abhijit-logo-dark.png" alt="Abhijit Chakraborty Logo" class="h-12 hidden dark:block" />
+</h1>
+      <button id="toggleTheme" class="text-sm px-4 py-2 border rounded">Toggle Dark Mode</button>
+    </header>
 
-    <title>Abhijit Chakraborty</title>
+    <main class="px-6 md:flex md:gap-6 max-w-7xl mx-auto">
+      <!-- Sidebar with Photo and Contact -->
+     
+<aside class="md:w-1/4 flex flex-col items-center md:items-start mb-12 md:mb-0 space-y-6">
+    <div class="w-48 h-64 overflow-hidden border-4 border-gray-300 dark:border-gray-600">
+      <img src="images/abhi.jpg" alt="Your Photo" class="w-full h-full object-cover" />
+    </div>
+    <div class="flex justify-center md:justify-start gap-4 mt-4">
+      <a href="mailto:you@example.com" class="hover:opacity-80" title="Email">
+        <img src="https://img.icons8.com/color/48/gmail-new.png" alt="Gmail" class="w-6 h-6" />
+      </a>
+      <a href="https://www.linkedin.com/in/abhijitchak/" class="hover:opacity-80" title="LinkedIn" target="_blank">
+        <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" class="w-6 h-6" />
+      </a>
+      <a href="https://x.com/ChakInsights" class="hover:opacity-80" title="Twitter" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/000000/twitterx.png" alt="Twitter" class="w-6 h-6" />
+      </a>
+      <a href="https://medium.com/@abhijit.chak" class="hover:opacity-80" title="Medium" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/000000/medium-monogram.png" alt="Medium" class="w-6 h-6" />
+      </a>
+      <a href="https://scholar.google.com/citations?user=H_rluhMAAAAJ&hl=en&authuser=1" class="hover:opacity-80" title="ORCID" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/000000/graduation-cap.png" alt="ORCID" class="w-6 h-6" />
+      </a>
+      <a href="Abhijit_Chakraborty_resume_Updated.pdf" class="hover:opacity-80" title="CV">
+        <img src="https://img.icons8.com/fluency/48/resume.png" alt="CV" class="w-6 h-6" />
+      </a>
+    </div>
+  <div class="w-full">
+    <div class="h-[180px] overflow-y-auto bg-white dark:bg-gray-800 p-4 border rounded shadow-md space-y-4 mt-6">
+      <h2 class="text-xl font-bold border-b pb-2">Services</h2>
+      <ul class="space-y-4 text-sm">
+        <li>
+            <div class="flex items-start gap-4">
+                <img src="images/hbr.jpg" alt="HBR Logo" class="w-10 h-10" />
+                <div>
+          <h3 class="font-semibold text-base">Harvard Business Review</h3>
+          <p>Member of Board of Advisors.</p>
+        </li>
+        <li>
+            <div class="flex items-start gap-4">
+                <img src="images/apache.jpg" alt="apache Logo" class="w-10 h-10" />
+                <div>
+          <h3 class="font-semibold text-base">Apache Software Foundation</h3>
+          <p>Open source contributor.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</aside>
 
-    <meta name="author" content="Abhijit Chakraborty">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Main Content -->
+      <section class="md:w-2/4 space-y-24">
+        <!-- About Section -->
+        <section id="about">
+          <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+          <p class="text-lg">I also work in MongoDB in  as solutions architect with over 15 years of experience designing scalable cloud solutions, focusing on  <span  class="text-blue-500">LLM-based enterprise applications, intelligent search engines, and AI-driven knowledge management.</span></p>
+          <p class="text-lg">
+              I am a Ph.D. student in Computer Science at Arizona State University.I work at <a
+                  href='https://coral-lab-asu.github.io' class="text-blue-500">CoRAL Lab (AI Lab)</a>, supervised by <a
+                  href='https://vgupta123.github.io' class="text-blue-500">Dr. Vivek Gupta</a>. 
+                  My research interests lie at the intersection of machine learning and NLP, aiming to develop <span  class="text-blue-500">innovative solutions that enhance human-computer interactions and LLMs/VLMs for decision making or planning (a.k.a. AI agents)</span>.
+              Specifically, I am working on:
+          </p>
+          <p class="text-lg">
+              (a) Improving knowledge integration in large-scale language models (via enhanced embeddings and knowledge graphs).
+          </p>
+          <p class="text-lg">
+              (b) Automating and scaling NLP model deployment (via MLOps frameworks).
+          </p>
+          <p class="text-lg">
+              (c) Ensuring sustainability and efficiency in NLP systems.
+          </p>
+        </section>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-          rel="stylesheet">
+        <!-- Affiliations Section -->
+        <section id="experience">
+          <h2 class="text-3xl font-semibold mb-4">Affiliations</h2>
+          <ul class="space-y-4">
+            <li>
+                <div class="flex items-start gap-4">
+                    <img src="images/mongo.jpg" alt="mongo Logo" class="w-10 h-10" />
+                    <div>
+                <h3 class="text-xl font-bold">Technical Sales Director North America @ MongoDB</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400"> May 2022 - Present</p>
+              </li>
+              <li>
+                <li>
+                    <div class="flex items-start gap-4">
+                        <img src="images/orcl.jpg" alt="oracle Logo" class="w-10 h-10" />
+                        <div>
+                    <h3 class="text-xl font-bold">Principle Software Development Engineer @ Oracle</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400"> Jun 2015 - May 2022</p>
+                  </li>
+                  <li>
+                    <div class="flex items-start gap-4">
+                        <img src="images/prkrm.jpg" alt="prkm Logo" class="w-10 h-10" />
+                        <div>
+                    <h3 class="text-xl font-bold">Software Development Engineer @ Prokarma</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400"> Oct 2014 - Jun 2015</p>
+                  </li>
+                    <li>
+                        <div class="flex items-start gap-4">
+                            <img src="images/infosys.jpg" alt="infy Logo" class="w-11 h-10" />
+                            <div>
+                        <h3 class="text-xl font-bold">Data Engineering -Tech Lead @ Infosys</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400"> Dec 2011 - Oct 2014</p>
+                      </li>
+                      <li>
+                        <li>
+                            <div class="flex items-start gap-4">
+                                <img src="images/srsconslt.jpg" alt="srs Logo" class="w-11 h-10" />
+                                <div>
+                            <h3 class="text-xl font-bold">Software Engineer @ SRS Consulting</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400"> May 2011 - Nov 2011</p>
+                          </li>
+                          <li>
+                            <li>
+                                <div class="flex items-start gap-4">
+                                    <img src="images/tcs.jpg" alt="tcs Logo" class="w-10 h-10" />
+                                    <div>
+                                <h3 class="text-xl font-bold">Systems Engineer @ TCS</h3>
+                                <p class="text-sm text-gray-500 dark:text-gray-400"> Nov 2007 - May 2011</p>
+                              </li>
+                              <li>
+    <div class="flex items-start gap-4">
+      <img src="images/ASU.jpg" alt="ASU Logo" class="w-10 h-10" />
+      <div>
+        <h3 class="text-xl font-bold">PhD in Computer Science @ Arizona State University</h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400">Fall 2023 - Expected Fall 2028</p>
+      </div>
+    </div>
+  </li>
+  
+  <li>
+    <div class="flex items-start gap-4">
+      <img src="images/ASU.jpg" alt="ASU Logo" class="w-10 h-10" />
+      <div>
+        <h3 class="text-xl font-bold">MS in Computer Science @ Arizona State University</h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400">Fall 2020 - Fall 2022</p>
+      </div>
+    </div>
+  </li>
+  
+  <li>
+    <div class="flex items-start gap-4">
+      <img src="images/Utech.jpg" alt="MAKAUT Logo" class="w-10 h-10" />
+      <div>
+        <h3 class="text-xl font-bold">B.Tech. in Electrical Engineering @ MAKAUT, India</h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400">Spring 2003 - Summer 2007</p>
+      </div>
+    </div>
+  </li>
+            <!-- Add more experience items here -->
+            
+        </section>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Projects and Publications Tabs -->
+        <section id="projects-publications">
+          <h2 class="text-3xl font-semibold mb-4">Work</h2>
+          <div class="mb-4 flex gap-4">
+            <button id="tabProjects" class="px-4 py-2 border rounded bg-blue-500 text-white">Projects</button>
+            <button id="tabPublications" class="px-4 py-2 border rounded">Publications</button>
+          </div>
+          <div id="projectsSection" class="hidden">
+            <ul class="space-y-4">
+            <li>
+                <h3 class="text-lg font-bold">RelatE: Relational Embeddings through Modulus-Phase Decomposition</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Novel approach on knowledge graph datasets</p>
+              
+            <!-- Add more project cards -->
+              
+                <h3 class="text-lg font-bold">Adaptive Multi-Agent Framework</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400">(AMAF) for Personalized and Context-Aware Table Summarization</p>
+              </li>
+            </ul>  
+          </div>
+          <div id="publicationsSection" class="hidden">
+            <ul class="space-y-4">
+              <li>
+                <h3 class="text-lg font-bold">Machine Learning Operations: A Mapping Study</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400">CSCE 2024, Las Vegas, United States</p>
+                <a href="https://arxiv.org/abs/2409.19416" class="text-blue-500 hover:underline text-sm">Read Paper</a>
+              </li>
+              <!-- Add more publication entries -->
+            </ul>
+          </div>
+        </section>
+      </section>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="images/favicon.ico">
-</head>
+      <!-- Scrollable News Section -->
+<aside class="md:w-[300px] h-[360px] overflow-y-auto bg-white dark:bg-gray-800 p-4 border rounded shadow-md space-y-4 mt-16 md:ml-6">
+  <h2 class="text-xl font-bold border-b pb-2">News</h2>
+  <ul class="space-y-4 text-sm">
+    <li>
+      <p class="font-semibold">June 1, 2024</p>
+      <p>1 paper got accepted <a href="https://american-cse.org/csce2024/" class="text-blue-500">CSCE 2024</a></p>
+    </li>
+  </ul>
+</aside>
 
-<body>
-<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-    <tr style="padding:0px">
-        <td style="padding:0px">
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
+    
 
-                <tr style="padding:0px">
-                    <td style="padding-left:0%;padding-right:2.5%;padding-top:2.5%;width:63%;vertical-align:middle">
-                        <p style="text-align:left">
-                            <name>Abhijit Chakraborty</name>
-                            <br>
-                            Preferred: achakr40 [at] asu [dot] edu
-                            <br>
-                            abhijit [dot] chakraborty [at] mongodb [dot] com
-                        </p>
-                        
-                        <p>I also work in MongoDB in  as solutions architect, focusing on  <span style="font-weight: bold;">LLM-based enterprise applications, intelligent search engines, and AI-driven knowledge management.</span></p>
-                        <p>
-                            I am a Ph.D. student in Computer Science at Arizona State University.. I work at <a
-                                href='https://coral-lab-asu.github.io'>CoRAL Lab (AI Lab)</a>, supervised by <a
-                                href='https://vgupta123.github.io'>Dr. Vivek Gupta</a>. 
-                                My research interests lie at the intersection of machine learning and NLP, aiming to develop <span style="font-weight: bold;">innovative solutions that enhance human-computer interactions and LLMs/VLMs for decision making or planning (a.k.a. AI agents)</span>.
-                            Specifically, I am working on:
-                        </p>
-                        <p>
-                            (a) Improving knowledge integration in large-scale language models (via enhanced embeddings and knowledge graphs).
-                        </p>
-                        <p>
-                            (b) Automating and scaling NLP model deployment (via MLOps frameworks).
-                        </p>
-                        <p>
-                            (c) Ensuring sustainability and efficiency in NLP systems.
-                        </p>
+</main>
 
-                        <p style="text-align:left">
-                            <!-- <a href="mailto:achakr40@asu.edu"><b>email</b></a> &nbsp&nbsp|&nbsp&nbsp -->
-                            <!-- <a href="https://bit.ly/3sRTQGh"><b>cv</b></a> &nbsp&nbsp|&nbsp&nbsp
-                            <a href="https://scholar.google.com/citations?user=c1L_gZoAAAAJ&hl=en"><b>google scholar</b></a>
-                            &nbsp&nbsp|&nbsp&nbsp  -->
-                            <a href="https://x.com/ChakInsights"><b>twitter</b></a> &nbsp&nbsp|&nbsp&nbsp
-                            <a href="Abhijit_Chakraborty_resume_Updated.pdf"><b>cv</b></a> &nbsp&nbsp|&nbsp&nbsp
-                            <a href="https://scholar.google.com/citations?user=H_rluhMAAAAJ&hl=en"><b>google scholar</b></a>
-                            &nbsp&nbsp|&nbsp&nbsp
-                            <a href="https://www.linkedin.com/in/abhijitchak/"><b>linkedIn</b></a> &nbsp&nbsp|&nbsp&nbsp
-                            <a href="https://github.com/abhijit85"><b>github</b></a>
-                        </p>
-                    </td>
-                    <td style="padding:2.5%;width:40%;max-width:40%">
-                        <a href="images/photo.jpg"><img style="width:100%;max-width:100%;border-radius:30px"
-                                                                                alt="profile photo" src="images/abhi.jpg"></a>
-                                            </td>
-                </tr>
-                </tbody>
-            </table>
+    <footer class="text-center p-6 mt-24 text-sm text-gray-400">
+      &copy; 2025 Abhijit Chakraborty. Built with HTML + Tailwind CSS.
+    </footer>
 
-            <hr>
-            <!-- news feed -->
-            <heading><b>News</b></heading>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                <tr>
-                    <td style="padding-left:2.5%;padding-bottom:20px;width:100%;vertical-align:middle">
-                        <p>
-                            <ul class="fa-ul">
-                                <li><i class="fa fa-chevron-right"></i>
-                                    <p style="display:inline;color:#ff0066;">[2024.03]</p> 1 <a
-                                            href='https://arxiv.org/abs/2409.19416'>paper</a> accepted to <b>CSCE 2024</b>.
-                                </li>
-                            </ul>
-           <!-- Affiliations -->
-           <hr>
-           <heading><b>Affiliations</b></heading>
-           <br><br>
+    <script>
+      document.getElementById('toggleTheme').addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+      });
 
-               <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                <td style="padding-left:20px;padding-bottom:2px;vertical-align:middle;text-align:center;width:15%;">
-                    <img src="images/ASU.jpg" style="width:42px">
-                </td>
-                <td style="padding-left:2px;padding-bottom:5px;width:55%;vertical-align:left">
-                    <b>Arizona State University</b>, PhD in Computer Science
-                </td>
-                <td style="padding-bottom:5px;width:30%;vertical-align:right">
-                    Fall 2023 - Expected Fall 2028
-                </td>
-                </tr>
-                </tbody>
-            </table>
+      const tabProjects = document.getElementById('tabProjects');
+      const tabPublications = document.getElementById('tabPublications');
+      const projectsSection = document.getElementById('projectsSection');
+      const publicationsSection = document.getElementById('publicationsSection');
 
-               <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                   <tbody>
-                   <td style="padding-left:20px;padding-bottom:2px;vertical-align:middle;text-align:center;width:15%;">
-                       <img src="images/ASU.jpg" style="width:42px"> 
-                   </td>
-                   <td style="padding-left:2px;padding-bottom:5px;width:55%;vertical-align:left">
-                       <b>Arizona State University</b>, MS. in Computer Science
-                   </td>
-                   <td style="padding-bottom:5px;width:30%;vertical-align:right">
-                       Fall 2020 - Fall 2022
-                   </td>
-                   </tr>
-                   </tbody>
-               </table>
+      tabProjects.addEventListener('click', () => {
+        projectsSection.classList.remove('hidden');
+        publicationsSection.classList.add('hidden');
+        tabProjects.classList.add('bg-blue-500', 'text-white');
+        tabPublications.classList.remove('bg-blue-500', 'text-white');
+      });
 
-               <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                   <tbody>
-                   <td style="padding-left:20px;padding-bottom:2px;vertical-align:middle;text-align:center;width:15%;">
-                       <img src="images/Utech.jpg" style="width:70px">
-                   </td>
-                   <td style="padding-left:2px;padding-bottom:8px;width:55%;vertical-align:left">
-                       <b>Maulana Abul Kalam Azad University of Technology, India</b>, B.Tech. in Electrical Engineering
-                   </td>
-                   <td style="padding-bottom:8px;width:30%;vertical-align:right">
-                       Spring 2003 - Summer 2007                   </td>
-                   </tr>
-                   </tbody>
-               </table>
-
-
-               <p></p>
-               </tbody>
-           </table>
-       </td>
-   </tr>
-   </tbody>
-</table>
-
-<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-   <tbody>
-   <tr style="padding:0px">
-       <td style="padding:0px">
-
-<!--<script async src="//static.getclicky.com/101478358.js"></script> 
-<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101386582ns.gif" /></p></noscript> -->
-<a title="Web Analytics" href="https://clicky.com/101478358"><img alt="Clicky" src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
-<script async data-id="101478358" src="//static.getclicky.com/js"></script>
-<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101478358ns.gif" /></p></noscript>
-<script src="https://www.w3counter.com/tracker.js?id=155045"></script>
-
-
-</body>
+      tabPublications.addEventListener('click', () => {
+        publicationsSection.classList.remove('hidden');
+        projectsSection.classList.add('hidden');
+        tabPublications.classList.add('bg-blue-500', 'text-white');
+        tabProjects.classList.remove('bg-blue-500', 'text-white');
+      });
+    </script>
+  </body>
 </html>
