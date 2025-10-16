@@ -1,30 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Abhijit Chakraborty| Personal Site</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'ui-sans-serif', 'system-ui'],
-            },
-          }
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhijit Chakraborty | AI Researcher & Solutions Architect</title>
+
+  <!-- ==================== SEO & Identity Meta Tags ==================== -->
+  <meta name="description" content="Official personal website of Abhijit Chakraborty — Researcher, Partner Solutions Architect at MongoDB, and academic contributor in Knowledge Graphs, Federated RAG, and Multimodal Reasoning.">
+  <meta name="keywords" content="Abhijit Chakraborty, Abhijit Chakraborty MongoDB, Abhijit Chakraborty Research, Knowledge Graphs, RAG, AI, NeurIPS, ACL, EMNLP, ICLR">
+  <meta name="author" content="Abhijit Chakraborty">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://abhijit85.github.io/">
+
+  <!-- Open Graph / Social Cards -->
+  <meta property="og:title" content="Abhijit Chakraborty | Researcher & Solutions Architect">
+  <meta property="og:description" content="Personal academic website of Abhijit Chakraborty — Research in AI, Knowledge Graphs, and Federated Systems.">
+  <meta property="og:url" content="https://abhijit85.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://abhijit85.github.io/assets/profile.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abhijit Chakraborty | AI Research & Federated RAG">
+  <meta name="twitter:description" content="Official personal academic homepage of Abhijit Chakraborty.">
+  <meta name="twitter:image" content="https://abhijit85.github.io/assets/profile.jpg">
+  <meta name="twitter:site" content="@abhichakraborty">
+
+  <!-- ==================== Schema.org Person Markup ==================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abhijit Chakraborty",
+    "alternateName": "Abhichakraborty",
+    "url": "https://abhijit85.github.io/",
+    "image": "https://abhijit85.github.io/assets/profile.jpg",
+    "jobTitle": "Solutions Architect, MongoDB | Researcher, Arizona State University",
+    "affiliation": [
+      {
+        "@type": "Organization",
+        "name": "MongoDB"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Arizona State University"
       }
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-      }
-    </style>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  </head>
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/abhichakraborty",
+      "https://github.com/Abhijit85",
+      "https://scholar.google.com/citations?user=XXXX",
+      "https://x.com/abhichakraborty",
+      "https://www.mongodb.com/",
+      "https://research.asu.edu/"
+    ],
+    "knowsAbout": [
+      "Knowledge Graph Embeddings",
+      "Retrieval-Augmented Generation",
+      "Federated Learning",
+      "AI Systems Design",
+      "Multi-Agent Reasoning"
+    ],
+    "description": "Official personal website of Abhijit Chakraborty, AI researcher and Solutions Architect at MongoDB, focusing on knowledge graphs, federated RAG, and interpretable AI."
+  }
+  </script>
+
+  <!-- ==================== Tailwind & Fonts ==================== -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
   <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors">
     <header class="p-6 flex justify-between items-center">
       <h1 class="text-2xl font-bold flex items-center gap-2">
@@ -105,28 +168,59 @@
 </aside>
 
       <!-- Main Content -->
-      <section class="md:w-2/4 space-y-24">
-        <!-- About Section -->
-        <section id="about">
-          <h2 class="text-3xl font-semibold mb-4">About Me</h2>
-          <p class="text-lg">I also work in MongoDB in  as solutions architect with over 15 years of experience designing scalable cloud solutions, focusing on  <span  class="text-blue-500">LLM-based enterprise applications, intelligent search engines, and AI-driven knowledge management.</span></p>
-          <p class="text-lg">
-              I am a Ph.D. student in Computer Science at Arizona State University.I work at <a
-                  href='https://coral-lab-asu.github.io' class="text-blue-500">CoRAL Lab (AI Lab)</a>, supervised by <a
-                  href='https://vgupta123.github.io' class="text-blue-500">Dr. Vivek Gupta</a>. 
-                  My research interests lie at the intersection of machine learning and NLP, aiming to develop <span  class="text-blue-500">innovative solutions that enhance human-computer interactions and LLMs/VLMs for decision making or planning (a.k.a. AI agents)</span>.
-              Specifically, I am working on:
-          </p>
-          <p class="text-lg">
-              (a) Improving knowledge integration in large-scale language models (via enhanced embeddings and knowledge graphs).
-          </p>
-          <p class="text-lg">
-              (b) Automating and scaling NLP model deployment (via MLOps frameworks).
-          </p>
-          <p class="text-lg">
-              (c) Ensuring sustainability and efficiency in NLP systems.
-          </p>
+        <section class="md:w-2/4 space-y-24">
+          <!-- About Section -->
+          <section id="about">
+            <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+            <p class="text-lg">
+              I’m <strong>Abhijit Chakraborty</strong>, a Solutions Architect at 
+              <a href="https://www.mongodb.com" class="text-blue-500">MongoDB</a> and a Ph.D. researcher in Computer Science at 
+              <a href="https://coral-lab-asu.github.io" class="text-blue-500">Arizona State University</a>, 
+              where I work with 
+              <a href="https://vgupta123.github.io" class="text-blue-500">Dr. Vivek Gupta</a> at the CoRAL Lab (AI Lab).
+            </p>
+
+            <p class="text-lg">
+              My work bridges <span class="text-blue-500">cloud systems, data intelligence, and machine learning</span>, 
+              with research spanning <span class="text-blue-500">Knowledge Graph Embeddings (KGE)</span>, 
+              <span class="text-blue-500">Retrieval-Augmented Generation (RAG)</span>, and 
+              <span class="text-blue-500">Federated AI Systems</span>. 
+              I’ve contributed to papers accepted at top venues including <strong>NeurIPS, ACL, and EMNLP</strong>, 
+              and I build <span class="text-blue-500">scalable, production-grade AI architectures</span> 
+              combining <strong>MongoDB Atlas</strong> with advanced <strong>LLM and MLOps pipelines on AWS</strong>.
+            </p>
+
+            <p class="text-lg">
+              This website serves as my personal hub for <span class="text-blue-500">research updates</span>, 
+              <span class="text-blue-500">open-source projects</span>, and <span class="text-blue-500">collaborations in trustworthy, interpretable, and scalable AI</span>.
+            </p>
+          </section>
         </section>
+
+        <!--Research Focus Section -->
+        <section id="research-focus" class="space-y-6">
+  <h3 class="text-2xl font-semibold mb-4">Research Focus</h3>
+  <ul class="list-disc list-inside text-lg space-y-2">
+    <li>
+      <span class="text-blue-500">Knowledge Graph Embeddings (KGE):</span>
+      Designing interpretable and expressive relational models for reasoning and representation learning.
+    </li>
+    <li>
+      <span class="text-blue-500">Retrieval-Augmented Generation (RAG):</span>
+      Building weighted and federated RAG systems that integrate structured and unstructured knowledge efficiently.
+    </li>
+    <li>
+      <span class="text-blue-500">Federated & Agentic AI Systems:</span>
+      Developing decentralized, privacy-preserving, and cooperative multi-agent frameworks for trustworthy AI.
+    </li>
+    <li>
+      <span class="text-blue-500">Applied AI & Cloud Architectures:</span>
+      Leveraging <strong>MongoDB Atlas</strong> and <strong>AWS</strong> to deploy scalable, LLM-powered data pipelines and intelligent search systems for real-world enterprise use cases.
+    </li>
+  </ul>
+</section>
+
+
 
         <!-- Affiliations Section -->
         <section id="experience">
