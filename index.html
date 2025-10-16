@@ -95,7 +95,7 @@
           <img src="images/abhijit-logo-light.png" alt="Abhijit Chakraborty Logo" class="h-12 w-auto rounded-full border border-slate-200 shadow-sm dark:hidden" />
           <img src="images/abhijit-logo-dark.png" alt="Abhijit Chakraborty Logo (Dark)" class="hidden h-12 w-auto rounded-full border border-slate-800 shadow-sm dark:block" />
         </a>
-        <div class="flex items-center gap-4">
+        <div class="flex items-center">
           <nav class="hidden items-center gap-6 text-sm font-medium text-slate-600 md:flex dark:text-slate-300">
             <a href="#hero" class="hover:text-slate-900 dark:hover:text-white">About</a>
             <a href="#experience" class="hover:text-slate-900 dark:hover:text-white">Experience</a>
@@ -104,9 +104,6 @@
             <a href="#publications" class="hover:text-slate-900 dark:hover:text-white">Publications</a>
             <a href="#contact" class="hover:text-slate-900 dark:hover:text-white">Contact</a>
           </nav>
-          <button id="toggleTheme" class="rounded-full border border-slate-300 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-600 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-300 dark:hover:bg-slate-800">
-            Toggle
-          </button>
         </div>
       </div>
     </header>
@@ -572,19 +569,5 @@
       © 2025 Abhijit Chakraborty · Built with HTML & Tailwind CSS · Always learning.
     </footer>
 
-    <script>
-      (function () {
-        const root = document.documentElement;
-        const storedTheme = localStorage.getItem('abhijit-theme');
-        if (storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          root.classList.add('dark');
-        }
-        document.getElementById('toggleTheme').addEventListener('click', () => {
-          root.classList.toggle('dark');
-          const isDark = root.classList.contains('dark');
-          localStorage.setItem('abhijit-theme', isDark ? 'dark' : 'light');
-        });
-      })();
-    </script>
   </body>
 </html>
