@@ -88,333 +88,329 @@
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
-  <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors">
-    <header class="p-6 flex justify-between items-center">
-      <h1 class="text-2xl font-bold flex items-center gap-2">
-  <img src="images/abhijit-logo-light.png" alt="Abhijit Chakraborty Logo" class="h-20 block dark:hidden" />
-<img src="images/abhijit-logo-dark.png" alt="Abhijit Chakraborty Logo" class="h-12 hidden dark:block" />
-</h1>
-      <button id="toggleTheme" class="text-sm px-4 py-2 border rounded">Toggle Dark Mode</button>
+  <body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors">
+    <header class="sticky top-0 z-50 border-b border-slate-200 bg-slate-50/90 dark:border-slate-800 dark:bg-slate-950/90 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-5 sm:px-6">
+        <a href="#hero" class="flex items-center gap-3">
+          <img src="images/abhijit-logo-light.png" alt="Abhijit Chakraborty Logo" class="h-12 w-12 rounded-full border border-slate-200 shadow-sm dark:hidden" />
+          <img src="images/abhijit-logo-dark.png" alt="Abhijit Chakraborty Logo (Dark)" class="hidden h-12 w-12 rounded-full border border-slate-800 shadow-sm dark:block" />
+          <div>
+            <p class="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">Portfolio</p>
+            <p class="text-lg font-semibold">Abhijit Chakraborty</p>
+          </div>
+        </a>
+        <div class="flex items-center gap-4">
+          <nav class="hidden items-center gap-6 text-sm font-medium text-slate-600 md:flex dark:text-slate-300">
+            <a href="#hero" class="hover:text-slate-900 dark:hover:text-white">About</a>
+            <a href="#experience" class="hover:text-slate-900 dark:hover:text-white">Experience</a>
+            <a href="#research-focus" class="hover:text-slate-900 dark:hover:text-white">Research</a>
+            <a href="#projects" class="hover:text-slate-900 dark:hover:text-white">Projects</a>
+            <a href="#publications" class="hover:text-slate-900 dark:hover:text-white">Publications</a>
+            <a href="#contact" class="hover:text-slate-900 dark:hover:text-white">Contact</a>
+          </nav>
+          <button id="toggleTheme" class="rounded-full border border-slate-300 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-600 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-300 dark:hover:bg-slate-800">
+            Toggle
+          </button>
+        </div>
+      </div>
     </header>
 
-    <main class="px-6 md:flex md:items-start md:gap-6 max-w-7xl mx-auto">
-      <!-- Sidebar with Photo and Contact -->
-     
-<aside class="md:w-1/4 flex flex-col items-center md:items-start mb-12 md:mb-0 space-y-6">
-    <div class="w-48 h-64 overflow-hidden border-4 border-gray-300 dark:border-gray-600">
-      <img src="images/abhi1.jpeg" alt="Your Photo" class="w-full h-full object-cover" />
-    </div>
-    <div class="flex justify-center md:justify-start gap-4 mt-4">
-      <a href="mailto:you@example.com" class="hover:opacity-80" title="Email">
-        <img src="https://img.icons8.com/color/48/gmail-new.png" alt="Gmail" class="w-6 h-6" />
-      </a>
-      <a href="https://www.linkedin.com/in/abhijitchak/" class="hover:opacity-80" title="LinkedIn" target="_blank">
-        <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" class="w-6 h-6" />
-      </a>
-      <a href="https://x.com/ChakInsights" class="hover:opacity-80" title="Twitter" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/50/000000/twitterx.png" alt="Twitter" class="w-6 h-6" />
-      </a>
-      <a href="https://medium.com/@abhijit.chak" class="hover:opacity-80" title="Medium" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/50/000000/medium-monogram.png" alt="Medium" class="w-6 h-6" />
-      </a>
-      <a href="https://scholar.google.com/citations?user=H_rluhMAAAAJ&hl=en&authuser=1" class="hover:opacity-80" title="ORCID" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/50/000000/graduation-cap.png" alt="ORCID" class="w-6 h-6" />
-      </a>
-      <a href="https://github.com/Abhijit85?tab=repositories" class="hover:opacity-80" title="GitHub" target="_blank">
-
-        <img src="images/github-light.svg" alt="GitHub" class="w-6 h-6 block dark:hidden" />
-        <img src="images/github-dark.svg" alt="GitHub" class="w-6 h-6 hidden dark:block" />
-      </a>
-      <a href="Abhijit_Chakraborty_resume_Updated.pdf" class="hover:opacity-80" title="CV">
-        <img src="https://img.icons8.com/fluency/48/resume.png" alt="CV" class="w-6 h-6" />
-      </a>
-    </div>
-  <div class="w-full">
-    <div class="h-[500px] overflow-y-auto bg-white dark:bg-gray-800 p-4 border rounded shadow-md space-y-4 mt-6">
-      <h2 class="text-xl font-bold border-b pb-2">Services</h2>
-      <ul class="space-y-4 text-sm">
-        <li>
-          <div class="flex items-start gap-4">
-            <img src="images/hbr.jpg" alt="HBR Logo" class="w-10 h-10" />
-            <div>
-              <h3 class="font-semibold text-base">Harvard Business Review</h3>
-              <p>Member of Board of Advisors.</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="flex items-start gap-4">
-            <img src="images/apache.jpg" alt="Apache Logo" class="w-10 h-10" />
-            <div>
-              <h3 class="font-semibold text-base">Apache Software Foundation</h3>
-              <p>Open source contributor.</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="flex items-start gap-4">
-            <img src="images/neurips.png" alt="NeurIPS Logo" class="w-10 h-10" />
-            <div>
-              <h3 class="font-semibold text-base">NeurIPS</h3>
-              <p>Served as a reviewer in NeurIPS 2025.</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="flex items-start gap-4">
-            <img src="images/emnlp.png" alt="EMNLP Logo" class="w-10 h-10" />
-            <div>
-              <h3 class="font-semibold text-base">EMNLP</h3>
-              <p>Served as a reviewer in EMNLP 2025.</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</aside>
-
-      <!-- Main Content -->
-      <div class="md:w-2/4 space-y-16">
-        <!-- About Section -->
-        <section id="about">
-          <h2 class="text-3xl font-semibold mb-4">About Me</h2>
-          <p class="text-lg">
-            I’m <strong>Abhijit Chakraborty</strong>, a Solutions Architect at
-            <a href="https://www.mongodb.com" class="text-blue-500">MongoDB</a> and a Ph.D. researcher in Computer Science at
-            <a href="https://coral-lab-asu.github.io" class="text-blue-500">Arizona State University</a>,
-            where I work with
-            <a href="https://vgupta123.github.io" class="text-blue-500">Dr. Vivek Gupta</a> at the CoRAL Lab (AI Lab).
+    <main class="mx-auto max-w-6xl space-y-20 px-4 pb-24 pt-12 sm:px-6 sm:pt-16">
+      <section id="hero" class="grid gap-12 md:grid-cols-[3fr,2fr] md:items-center">
+        <div class="space-y-6">
+          <p class="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500 dark:text-slate-400">AI Research · Solutions Architecture · Ph.D. Candidate</p>
+          <h1 class="text-4xl font-semibold leading-tight sm:text-5xl">
+            Building trustworthy, enterprise-grade AI systems that connect knowledge, people, and products.
+          </h1>
+          <p class="max-w-2xl text-lg text-slate-600 dark:text-slate-300">
+            I’m <strong>Abhijit Chakraborty</strong>, Technical Sales Director at <a href="https://www.mongodb.com" class="text-blue-600 hover:underline dark:text-blue-400">MongoDB</a> and a Ph.D. researcher at <a href="https://coral-lab-asu.github.io" class="text-blue-600 hover:underline dark:text-blue-400">Arizona State University</a>. I partner with global enterprises to design production-grade knowledge graph, RAG, and multi-agent systems—while contributing research on frameworks for secure, interpretable AI.
           </p>
-
-          <p class="text-lg">
-            My work bridges <span class="text-blue-500">cloud systems, data intelligence, and machine learning</span>,
-            with research spanning <span class="text-blue-500">Knowledge Graph Embeddings (KGE)</span>,
-            <span class="text-blue-500">Retrieval-Augmented Generation (RAG)</span>, and
-            <span class="text-blue-500">Federated AI Systems</span>.
-            I’ve contributed to papers accepted at top venues including <strong>NeurIPS, ACL, and EMNLP</strong>,
-            and I build <span class="text-blue-500">scalable, production-grade AI architectures</span>
-            combining <strong>MongoDB Atlas</strong> with advanced <strong>LLM and MLOps pipelines on AWS</strong>.
-          </p>
-
-          <p class="text-lg">
-            This website serves as my personal hub for <span class="text-blue-500">research updates</span>,
-            <span class="text-blue-500">open-source projects</span>, and <span class="text-blue-500">collaborations in trustworthy, interpretable, and scalable AI</span>.
-          </p>
-        </section>
-
-        <!-- Research Focus Section -->
-        <section id="research-focus" class="space-y-6">
-          <h3 class="text-2xl font-semibold mb-4">Research Focus</h3>
-          <ul class="list-disc list-inside text-lg space-y-2">
-            <li>
-              <span class="text-blue-500">Knowledge Graph Embeddings (KGE):</span>
-              Designing interpretable and expressive relational models for reasoning and representation learning.
-            </li>
-            <li>
-              <span class="text-blue-500">Retrieval-Augmented Generation (RAG):</span>
-              Building weighted and federated RAG systems that integrate structured and unstructured knowledge efficiently.
-            </li>
-            <li>
-              <span class="text-blue-500">Federated & Agentic AI Systems:</span>
-              Developing decentralized, privacy-preserving, and cooperative multi-agent frameworks for trustworthy AI.
-            </li>
-            <li>
-              <span class="text-blue-500">Applied AI & Cloud Architectures:</span>
-              Leveraging <strong>MongoDB Atlas</strong> and <strong>AWS</strong> to deploy scalable, LLM-powered data pipelines and intelligent search systems for real-world enterprise use cases.
-            </li>
-          </ul>
-        </section>
-
-        <!-- Affiliations Section -->
-        <section id="experience">
-          <h2 class="text-3xl font-semibold mb-4">Affiliations</h2>
-          <ul class="space-y-4">
-            <li>
-              <div class="flex items-start gap-4">
-                <img src="images/mongo.jpg" alt="MongoDB Logo" class="w-10 h-10" />
-                <div>
-                  <h3 class="text-xl font-bold">Technical Sales Director North America @ MongoDB</h3>
-                  <p class="text-sm text-gray-500 dark:text-gray-400">May 2022 - Present</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-start gap-4">
-                <img src="images/orcl.jpg" alt="Oracle Logo" class="w-10 h-10" />
-                <div>
-                  <h3 class="text-xl font-bold">Principle Software Development Engineer @ Oracle</h3>
-                  <p class="text-sm text-gray-500 dark:text-gray-400">Jun 2015 - May 2022</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-start gap-4">
-                <img src="images/prkrm.jpg" alt="Prokarma Logo" class="w-10 h-10" />
-                <div>
-                  <h3 class="text-xl font-bold">Software Development Engineer @ Prokarma</h3>
-                  <p class="text-sm text-gray-500 dark:text-gray-400">Oct 2014 - Jun 2015</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-start gap-4">
-                <img src="images/infosys.jpg" alt="Infosys Logo" class="w-11 h-10" />
-                <div>
-                  <h3 class="text-xl font-bold">Data Engineering - Tech Lead @ Infosys</h3>
-                  <p class="text-sm text-gray-500 dark:text-gray-400">Dec 2011 - Oct 2014</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-start gap-4">
-                <img src="images/srsconslt.jpg" alt="SRS Consulting Logo" class="w-11 h-10" />
-                <div>
-                  <h3 class="text-xl font-bold">Software Engineer @ SRS Consulting</h3>
-                  <p class="text-sm text-gray-500 dark:text-gray-400">May 2011 - Nov 2011</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-start gap-4">
-                <img src="images/tcs.jpg" alt="TCS Logo" class="w-10 h-10" />
-                <div>
-                  <h3 class="text-xl font-bold">Systems Engineer @ TCS</h3>
-                  <p class="text-sm text-gray-500 dark:text-gray-400">Nov 2007 - May 2011</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-start gap-4">
-                <img src="images/ASU.jpg" alt="ASU Logo" class="w-10 h-10" />
-                <div>
-                  <h3 class="text-xl font-bold">PhD in Computer Science @ Arizona State University</h3>
-                  <p class="text-sm text-gray-500 dark:text-gray-400">Fall 2023 - Expected Fall 2028</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-start gap-4">
-                <img src="images/ASU.jpg" alt="ASU Logo" class="w-10 h-10" />
-                <div>
-                  <h3 class="text-xl font-bold">MS in Computer Science @ Arizona State University</h3>
-                  <p class="text-sm text-gray-500 dark:text-gray-400">Fall 2020 - Fall 2022</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-start gap-4">
-                <img src="images/Utech.jpg" alt="MAKAUT Logo" class="w-10 h-10" />
-                <div>
-                  <h3 class="text-xl font-bold">B.Tech. in Electrical Engineering @ MAKAUT, India</h3>
-                  <p class="text-sm text-gray-500 dark:text-gray-400">Spring 2003 - Summer 2007</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Projects and Publications Tabs -->
-        <section id="projects-publications">
-          <h2 class="text-3xl font-semibold mb-4">Work</h2>
-          <div class="mb-4 flex gap-4">
-            <button id="tabProjects" class="px-4 py-2 border rounded bg-blue-500 text-white">Projects</button>
-            <button id="tabPublications" class="px-4 py-2 border rounded">Publications</button>
+          <div class="flex flex-wrap gap-3">
+            <a href="mailto:abhijit.chakraborty@asu.edu" class="rounded-full bg-slate-900 px-5 py-2 text-sm font-semibold text-white shadow-sm hover:-translate-y-0.5 hover:shadow-md transition dark:bg-white dark:text-slate-900">Say Hello</a>
+            <a href="Abhijit_Chakraborty_resume_Updated.pdf" class="rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-200 dark:hover:bg-slate-800">Download CV</a>
           </div>
-          <div id="projectsSection">
-            <ul class="space-y-4">
+          <div class="flex flex-wrap items-center gap-4 text-sm text-slate-600 dark:text-slate-300">
+            <a href="https://www.linkedin.com/in/abhijitchak/" target="_blank" class="flex items-center gap-2 hover:text-slate-900 dark:hover:text-white">
+              <span class="inline-block h-2 w-2 rounded-full bg-emerald-500"></span> LinkedIn
+            </a>
+            <a href="https://github.com/Abhijit85?tab=repositories" target="_blank" class="hover:text-slate-900 dark:hover:text-white">GitHub</a>
+            <a href="https://x.com/ChakInsights" target="_blank" class="hover:text-slate-900 dark:hover:text-white">X (Twitter)</a>
+            <a href="https://scholar.google.com/citations?user=H_rluhMAAAAJ&hl=en&authuser=1" target="_blank" class="hover:text-slate-900 dark:hover:text-white">Google Scholar</a>
+            <a href="https://medium.com/@abhijit.chak" target="_blank" class="hover:text-slate-900 dark:hover:text-white">Medium</a>
+          </div>
+        </div>
+        <div class="relative mx-auto max-w-sm">
+          <div class="absolute -inset-4 rounded-3xl bg-gradient-to-br from-blue-200 via-purple-200 to-pink-200 blur-xl dark:from-blue-900/60 dark:via-fuchsia-900/40 dark:to-emerald-900/30"></div>
+          <div class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl dark:border-slate-700/60 dark:bg-slate-900">
+            <img src="images/abhi1.jpeg" alt="Portrait of Abhijit Chakraborty" class="h-full w-full object-cover" />
+            <div class="border-t border-slate-200 bg-slate-50 p-4 text-sm dark:border-slate-700 dark:bg-slate-900">
+              <p class="font-semibold">Currently in Phoenix & New York</p>
+              <p class="text-slate-500 dark:text-slate-400">Helping customers shape AI product roadmaps at scale.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="space-y-10">
+        <div class="flex flex-col gap-2">
+          <h2 class="text-2xl font-semibold">Current Roles & Experience</h2>
+          <p class="text-slate-600 dark:text-slate-300">
+            Nearly two decades of experience delivering data platforms, enterprise applications, and AI solutions across Fortune 500 teams.
+          </p>
+        </div>
+        <div class="space-y-8 border-l border-slate-200 pl-8 dark:border-slate-700">
+          <article class="relative">
+            <span class="absolute -left-[37px] flex h-3 w-3 items-center justify-center">
+              <span class="h-3 w-3 rounded-full border border-slate-300 bg-white dark:border-slate-600 dark:bg-slate-900"></span>
+            </span>
+            <p class="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">2022 — Present</p>
+            <h3 class="mt-2 text-lg font-semibold">Technical Sales Director, North America @ MongoDB</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">
+              Leading go-to-market architecture for AI-native workloads—federated RAG, real-time analytics, and data intelligence—on MongoDB Atlas.
+            </p>
+          </article>
+          <article class="relative">
+            <span class="absolute -left-[37px] flex h-3 w-3 items-center justify-center">
+              <span class="h-3 w-3 rounded-full border border-slate-300 bg-white dark:border-slate-600 dark:bg-slate-900"></span>
+            </span>
+            <p class="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">2015 — 2022</p>
+            <h3 class="mt-2 text-lg font-semibold">Principal Software Development Engineer @ Oracle</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">
+              Built large-scale distributed systems, microservices, and customer analytics platforms across Oracle Cloud applications.
+            </p>
+          </article>
+          <article class="relative">
+            <span class="absolute -left-[37px] flex h-3 w-3 items-center justify-center">
+              <span class="h-3 w-3 rounded-full border border-slate-300 bg-white dark:border-slate-600 dark:bg-slate-900"></span>
+            </span>
+            <p class="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">2014 — 2015</p>
+            <h3 class="mt-2 text-lg font-semibold">Software Development Engineer @ Prokarma</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">
+              Partnered with Fortune 100 clients to modernize enterprise integrations and commerce experiences.
+            </p>
+          </article>
+          <article class="relative">
+            <span class="absolute -left-[37px] flex h-3 w-3 items-center justify-center">
+              <span class="h-3 w-3 rounded-full border border-slate-300 bg-white dark:border-slate-600 dark:bg-slate-900"></span>
+            </span>
+            <p class="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">2007 — 2014</p>
+            <h3 class="mt-2 text-lg font-semibold">Engineering Leadership @ Infosys, SRS Consulting, TCS</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">
+              Delivered data engineering and large-scale application modernization for banking, telecom, and retail enterprises.
+            </p>
+          </article>
+        </div>
+        <div class="grid gap-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:grid-cols-3 dark:border-slate-700 dark:bg-slate-900/70">
+          <div>
+            <p class="text-sm uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">Academic</p>
+            <p class="mt-3 text-lg font-semibold">Ph.D. Computer Science @ Arizona State University</p>
+            <p class="text-sm text-slate-600 dark:text-slate-300">CoRAL Lab, advised by Dr. Vivek Gupta · Focus on federated RAG & interpretable knowledge graphs.</p>
+          </div>
+          <div>
+            <p class="text-sm uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">Graduate</p>
+            <p class="mt-3 text-lg font-semibold">MS Computer Science @ Arizona State University</p>
+            <p class="text-sm text-slate-600 dark:text-slate-300">Hands-on research in multi-modal knowledge reasoning and trustworthy AI systems.</p>
+          </div>
+          <div>
+            <p class="text-sm uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">Undergraduate</p>
+            <p class="mt-3 text-lg font-semibold">B.Tech Electrical Engineering @ MAKAUT, India</p>
+            <p class="text-sm text-slate-600 dark:text-slate-300">Foundation in signal processing, power systems, and embedded computing.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="research-focus" class="space-y-8">
+        <div class="flex flex-col gap-2">
+          <h2 class="text-2xl font-semibold">Research Focus</h2>
+          <p class="text-slate-600 dark:text-slate-300">Exploring the interface between structured knowledge, large language models, and responsible deployment.</p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
+            <h3 class="text-lg font-semibold">Knowledge Graph Embeddings</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+              Designing interpretable embeddings that capture semantics and enable reasoning for enterprise knowledge bases.
+            </p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
+            <h3 class="text-lg font-semibold">Retrieval-Augmented Generation</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+              Building weighted and federated RAG systems that adapt to regulated, multi-tenant data environments.
+            </p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
+            <h3 class="text-lg font-semibold">Federated & Agentic AI Systems</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+              Developing privacy-preserving, multi-agent orchestration for trustworthy collaboration across data silos.
+            </p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
+            <h3 class="text-lg font-semibold">Applied AI & Cloud Architectures</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+              Leveraging MongoDB Atlas and AWS to deliver resilient LLM pipelines, real-time search, and decision intelligence.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="space-y-8">
+        <div class="flex flex-col gap-2">
+          <h2 class="text-2xl font-semibold">Selected Projects</h2>
+          <p class="text-slate-600 dark:text-slate-300">Production-grade tooling and open research artifacts for the AI ecosystem.</p>
+        </div>
+        <div class="grid gap-6 lg:grid-cols-3">
+          <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-700 dark:bg-slate-900/60">
+            <div>
+              <p class="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">Open Source</p>
+              <h3 class="mt-3 text-xl font-semibold">ADAF</h3>
+              <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                Modular pipeline for personalized, context-aware table summarization using large language models.
+              </p>
+            </div>
+            <a href="https://github.com/Abhijit85/ADAF" class="mt-4 text-sm font-semibold text-blue-600 hover:underline dark:text-blue-400">GitHub Repo →</a>
+          </article>
+          <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-700 dark:bg-slate-900/60">
+            <div>
+              <p class="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">Infrastructure</p>
+              <h3 class="mt-3 text-xl font-semibold">ARM_Ex</h3>
+              <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                Utilities for building FAISS indices from JSON data, with multi-provider LLM support and evaluation tooling.
+              </p>
+            </div>
+            <a href="https://github.com/Abhijit85/ARM_Ex" class="mt-4 text-sm font-semibold text-blue-600 hover:underline dark:text-blue-400">GitHub Repo →</a>
+          </article>
+          <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-slate-700 dark:bg-slate-900/60">
+            <div>
+              <p class="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">Federated AI</p>
+              <h3 class="mt-3 text-xl font-semibold">FederatedRAG</h3>
+              <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                Framework combining structured relational embeddings with secure retrieval for cross-tenant knowledge sharing.
+              </p>
+            </div>
+            <a href="https://github.com/Abhijit85/FederatedRAG" class="mt-4 text-sm font-semibold text-blue-600 hover:underline dark:text-blue-400">GitHub Repo →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications" class="space-y-8">
+        <div class="flex flex-col gap-2">
+          <h2 class="text-2xl font-semibold">Recent Publications</h2>
+          <p class="text-slate-600 dark:text-slate-300">Research advancing the state of AI systems, interpretability, and federated learning.</p>
+        </div>
+        <div class="space-y-6">
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
+            <p class="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">CSCE 2024</p>
+            <h3 class="mt-2 text-lg font-semibold">Machine Learning Operations: A Mapping Study</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Comprehensive synthesis of MLOps practices across industries for reliable deployment.</p>
+            <a href="https://arxiv.org/abs/2409.19416" class="mt-3 inline-flex text-sm font-semibold text-blue-600 hover:underline dark:text-blue-400">Read Paper →</a>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
+            <p class="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">arXiv 2025</p>
+            <h3 class="mt-2 text-lg font-semibold">Is Architectural Complexity Overrated? Competitive and Interpretable Knowledge Graph Completion with RelatE</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">RelatE decomposes embeddings into modulus and phase for transparent KG reasoning.</p>
+            <a href="https://arxiv.org/abs/2505.18971" class="mt-3 inline-flex text-sm font-semibold text-blue-600 hover:underline dark:text-blue-400">Read Paper →</a>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
+            <p class="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">arXiv 2025</p>
+            <h3 class="mt-2 text-lg font-semibold">Federated Retrieval-Augmented Generation: A Systematic Mapping Study</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Surveying federated approaches for RAG across regulated, distributed data ecosystems.</p>
+            <a href="https://arxiv.org/abs/2505.18906" class="mt-3 inline-flex text-sm font-semibold text-blue-600 hover:underline dark:text-blue-400">Read Paper →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="space-y-8">
+        <div class="flex flex-col gap-2">
+          <h2 class="text-2xl font-semibold">Advisory & Service</h2>
+          <p class="text-slate-600 dark:text-slate-300">Giving back through editorial boards, open-source communities, and peer review.</p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2">
+          <article class="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
+            <img src="images/hbr.jpg" alt="Harvard Business Review logo" class="h-12 w-12 rounded-lg object-cover" />
+            <div>
+              <h3 class="text-lg font-semibold">Harvard Business Review</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-300">Member, Board of Advisors shaping the future of analytical leadership content.</p>
+            </div>
+          </article>
+          <article class="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
+            <img src="images/apache.jpg" alt="Apache Software Foundation logo" class="h-12 w-12 rounded-lg object-cover" />
+            <div>
+              <h3 class="text-lg font-semibold">Apache Software Foundation</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-300">Open-source contributor focused on data pipelines, governance, and AI enablement.</p>
+            </div>
+          </article>
+          <article class="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
+            <img src="images/neurips.png" alt="NeurIPS logo" class="h-12 w-12 rounded-lg object-cover" />
+            <div>
+              <h3 class="text-lg font-semibold">NeurIPS 2025 Reviewer</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-300">Reviewing submissions on trustworthy AI, federated learning, and retrieval systems.</p>
+            </div>
+          </article>
+          <article class="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
+            <img src="images/emnlp.png" alt="EMNLP logo" class="h-12 w-12 rounded-lg object-cover" />
+            <div>
+              <h3 class="text-lg font-semibold">EMNLP 2025 Reviewer</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-300">Supporting the NLP community with rigorous reviews of applied research.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="news" class="space-y-8">
+        <div class="flex flex-col gap-2">
+          <h2 class="text-2xl font-semibold">Latest News</h2>
+          <p class="text-slate-600 dark:text-slate-300">Selected highlights from the last year.</p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-[2fr,3fr]">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
+            <h3 class="text-sm uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">Milestones</h3>
+            <ul class="mt-4 space-y-4 text-sm text-slate-600 dark:text-slate-300">
               <li>
-                <h3 class="text-lg font-bold">ADAF</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">AMAF is a modular pipeline for personalized and context-aware table summarization using large language models.</p>
-                <a href="https://github.com/Abhijit85/ADAF" class="text-blue-500 hover:underline text-sm">GitHub Repo</a>
+                <p class="font-semibold text-slate-800 dark:text-slate-100">June 1, 2024</p>
+                <p>Paper accepted at <a href="https://american-cse.org/csce2024/" class="text-blue-600 hover:underline dark:text-blue-400">CSCE 2024</a>.</p>
               </li>
               <li>
-                <h3 class="text-lg font-bold">ARM_Ex</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Utilities for building a FAISS index from a JSON database with support for multiple LLM providers.</p>
-                <a href="https://github.com/Abhijit85/ARM_Ex" class="text-blue-500 hover:underline text-sm">GitHub Repo</a>
+                <p class="font-semibold text-slate-800 dark:text-slate-100">May 20, 2025</p>
+                <p>Submitted new work on federated RAG to <a href="https://2025.emnlp.org/" class="text-blue-600 hover:underline dark:text-blue-400">EMNLP 2025</a>.</p>
               </li>
               <li>
-                <h3 class="text-lg font-bold">FederatedRAG</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Framework for federated retrieval-augmented generation combining structured relational embeddings with hybrid retrieval and secure federated learning.</p>
-                <a href="https://github.com/Abhijit85/FederatedRAG" class="text-blue-500 hover:underline text-sm">GitHub Repo</a>
+                <p class="font-semibold text-slate-800 dark:text-slate-100">May 15, 2025</p>
+                <p>Submitted knowledge graph research to <a href="https://neurips.cc/" class="text-blue-600 hover:underline dark:text-blue-400">NeurIPS 2025</a>.</p>
               </li>
             </ul>
           </div>
-          <div id="publicationsSection" class="hidden">
-            <ul class="space-y-4">
-              <li>
-                <h3 class="text-lg font-bold">Machine Learning Operations: A Mapping Study</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">CSCE 2024, Las Vegas, United States</p>
-                <a href="https://arxiv.org/abs/2409.19416" class="text-blue-500 hover:underline text-sm">Read Paper</a>
-              </li>
-              <li>
-                <h3 class="text-lg font-bold">Is Architectural Complexity Overrated? Competitive and Interpretable Knowledge Graph Completion with RelatE</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">arXiv preprint, 2025</p>
-                <p class="text-sm text-gray-600 dark:text-gray-400">RelatE decomposes knowledge graph embeddings into modulus and phase components to reduce architectural complexity.</p>
-                <a href="https://arxiv.org/abs/2505.18971" class="text-blue-500 hover:underline text-sm">Read Paper</a>
-              </li>
-              <li>
-                <h3 class="text-lg font-bold">Federated Retrieval-Augmented Generation: A Systematic Mapping Study</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">arXiv preprint, 2025</p>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Survey of federated approaches for retrieval-augmented generation across distributed data sources.</p>
-                <a href="https://arxiv.org/abs/2505.18906" class="text-blue-500 hover:underline text-sm">Read Paper</a>
-              </li>
-              <!-- Add more publication entries -->
-            </ul>
+          <div class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-6 text-slate-100 shadow-lg dark:border-slate-700 dark:from-slate-800 dark:via-slate-900 dark:to-slate-950">
+            <div>
+              <p class="text-xs uppercase tracking-[0.3em] text-slate-400">Currently Exploring</p>
+              <h3 class="mt-3 text-2xl font-semibold">Federated retrieval infrastructures for enterprise copilots.</h3>
+              <p class="mt-4 text-sm text-slate-300">
+                Designing agentic workflows, governance, and observability patterns so organizations can safely scale AI assistants in regulated industries.
+              </p>
+            </div>
+            <a id="contact" href="mailto:abhijit.chakraborty@asu.edu" class="mt-6 inline-flex items-center justify-center rounded-full bg-white px-5 py-2 text-sm font-semibold text-slate-900 hover:-translate-y-0.5 hover:shadow-lg transition">
+              Collaborate →
+            </a>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+    </main>
 
-      <!-- Scrollable News Section -->
-<aside class="md:w-[300px] h-[360px] overflow-y-auto bg-white dark:bg-gray-800 p-4 border rounded shadow-md space-y-4 mt-16 md:ml-6 md:self-start">
-  <h2 class="text-xl font-bold border-b pb-2">News</h2>
-  <ul class="space-y-4 text-sm">
-    <li>
-      <p class="font-semibold">June 1, 2024</p>
-      <p>1 paper got accepted <a href="https://american-cse.org/csce2024/" class="text-blue-500">CSCE 2024</a></p>
-    </li>
-    <li>
-      <p class="font-semibold">May 15, 2025</p>
-      <p>1 paper submitted <a href="https://neurips.cc/" class="text-blue-500">NeurIPS 2025</a></p>
-    </li>
-    <li>
-      <p class="font-semibold">May 20, 2025</p>
-      <p>1 paper submitted <a href="https://2025.emnlp.org/" class="text-blue-500">EMNLP 2025</a></p>
-    </li>
-  </ul>
-</aside>
-
-    
-
-</main>
-
-    <footer class="text-center p-6 mt-24 text-sm text-gray-400">
-      &copy; 2025 Abhijit Chakraborty. Built with HTML + Tailwind CSS.
+    <footer class="border-t border-slate-200 bg-slate-100/70 py-8 text-center text-sm text-slate-500 dark:border-slate-800 dark:bg-slate-950/80 dark:text-slate-400">
+      © 2025 Abhijit Chakraborty · Built with HTML & Tailwind CSS · Always learning.
     </footer>
 
     <script>
-      document.getElementById('toggleTheme').addEventListener('click', () => {
-        document.documentElement.classList.toggle('dark');
-      });
-
-      const tabProjects = document.getElementById('tabProjects');
-      const tabPublications = document.getElementById('tabPublications');
-      const projectsSection = document.getElementById('projectsSection');
-      const publicationsSection = document.getElementById('publicationsSection');
-
-      tabProjects.addEventListener('click', () => {
-        projectsSection.classList.remove('hidden');
-        publicationsSection.classList.add('hidden');
-        tabProjects.classList.add('bg-blue-500', 'text-white');
-        tabPublications.classList.remove('bg-blue-500', 'text-white');
-      });
-
-      tabPublications.addEventListener('click', () => {
-        publicationsSection.classList.remove('hidden');
-        projectsSection.classList.add('hidden');
-        tabPublications.classList.add('bg-blue-500', 'text-white');
-        tabProjects.classList.remove('bg-blue-500', 'text-white');
-      });
+      (function () {
+        const root = document.documentElement;
+        const storedTheme = localStorage.getItem('abhijit-theme');
+        if (storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          root.classList.add('dark');
+        }
+        document.getElementById('toggleTheme').addEventListener('click', () => {
+          root.classList.toggle('dark');
+          const isDark = root.classList.contains('dark');
+          localStorage.setItem('abhijit-theme', isDark ? 'dark' : 'light');
+        });
+      })();
     </script>
   </body>
 </html>
