@@ -2,102 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Federated Retrieval-Augmented Generation Mapping Study | Abhijit Chakraborty</title>
-  <meta name="description" content="Federated Retrieval-Augmented Generation: A Systematic Mapping Study — explore the motivation, findings, and resources from Abhijit Chakraborty and collaborators.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Federated RAG mapping study | Abhijit Chakraborty</title>
+  <meta name="description" content="Systematic mapping study of federated retrieval-augmented generation, 2020 to 2025. Findings of EMNLP 2025.">
   <link rel="canonical" href="https://abhijit85.github.io/publications/federated-rag.html">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'ui-sans-serif', 'system-ui']
-          }
-        }
-      }
-    };
-  </script>
+  <meta property="og:title" content="Federated Retrieval-Augmented Generation: A Systematic Mapping Study">
+  <meta property="og:description" content="Systematic mapping study of federated retrieval-augmented generation, 2020 to 2025. Findings of EMNLP 2025.">
+  <meta property="og:type" content="article">
+  <meta name="citation_title" content="Federated Retrieval-Augmented Generation: A Systematic Mapping Study">
+  <meta name="citation_author" content="Abhijit Chakraborty">
+  <meta name="citation_author" content="Chahana Dahal">
+  <meta name="citation_author" content="Vivek Gupta">
+  <meta name="citation_publication_date" content="2025">
+  <meta name="citation_conference_title" content="Findings of the Association for Computational Linguistics: EMNLP 2025">
+  <meta name="citation_firstpage" content="7362">
+  <meta name="citation_lastpage" content="7374">
+  <meta name="citation_pdf_url" content="https://aclanthology.org/2025.findings-emnlp.388.pdf">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="icon" type="image/png" href="../images/logo-light.png">
+  <script>try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}</script>
 </head>
-<body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
-  <div class="relative overflow-hidden">
-    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-cyan-100 via-white to-violet-100 opacity-70 dark:from-slate-900 dark:via-slate-950 dark:to-cyan-950"></div>
-
-    <header class="border-b border-slate-200 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/70">
-      <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
-        <a href="../index.html" class="text-sm font-semibold text-blue-600 hover:underline dark:text-blue-300">← Back to Home</a>
-      </div>
-    </header>
-
-    <main class="mx-auto max-w-5xl px-6 py-12 sm:py-16">
-      <section class="mb-12 space-y-6">
-        <span class="inline-flex items-center gap-2 rounded-full bg-cyan-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-cyan-700 dark:bg-cyan-900/40 dark:text-cyan-200">arXiv 2025 · Preprint</span>
-        <h1 class="text-3xl font-semibold leading-tight sm:text-4xl">Federated Retrieval-Augmented Generation: A Systematic Mapping Study</h1>
-        <p class="text-base text-slate-600 dark:text-slate-300">
-          Abhijit Chakraborty, et al.
-        </p>
-        <p class="max-w-3xl text-lg text-slate-700 dark:text-slate-300">
-          Surveying architectures, privacy constraints, and deployment practices for federated retrieval-augmented generation. The work catalogs design patterns that allow regulated enterprises to build collaborative copilots while protecting data sovereignty.
-        </p>
-      </section>
-
-      <section class="grid gap-8 rounded-3xl border border-slate-200 bg-white/80 p-8 shadow-sm backdrop-blur dark:border-slate-700 dark:bg-slate-900/70">
-        <div>
-          <h2 class="text-xl font-semibold">Abstract</h2>
-          <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
-            We map the emerging landscape of federated RAG systems, with attention to data governance, communication protocols, and evaluation. The study enumerates approaches for hybrid retrieval, cross-tenant policy enforcement, and metric design for federated LLM deployments.
-          </p>
-        </div>
-
-        <div>
-          <h2 class="text-xl font-semibold">Highlights</h2>
-          <ul class="mt-3 space-y-3 text-sm text-slate-600 dark:text-slate-300">
-            <li class="flex items-start gap-3">
-              <span class="mt-1 h-2 w-2 rounded-full bg-cyan-500"></span>
-              <span>Taxonomy of topology choices (hub-and-spoke, peer-to-peer, hierarchical) for federated retrieval systems.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="mt-1 h-2 w-2 rounded-full bg-cyan-500"></span>
-              <span>Framework for auditing data residency, consent, and provenance in cross-organization knowledge exchange.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="mt-1 h-2 w-2 rounded-full bg-cyan-500"></span>
-              <span>Benchmark agenda outlining open research problems in latency, personalization, and privacy-preserving analytics for federated copilots.</span>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 class="text-xl font-semibold">Resources</h2>
-          <div class="mt-3 flex flex-wrap gap-4 text-sm font-semibold">
-            <a href="https://arxiv.org/pdf/2505.18906" class="inline-flex items-center gap-2 text-blue-600 hover:underline dark:text-blue-300">
-              <span>📄</span> PDF
-            </a>
-            <a href="https://arxiv.org/abs/2505.18906" class="inline-flex items-center gap-2 text-blue-600 hover:underline dark:text-blue-300">
-              <span>📚</span> arXiv
-            </a>
-            <a href="https://www.semanticscholar.org/paper/2505.18906" class="inline-flex items-center gap-2 text-indigo-600 hover:underline dark:text-indigo-300">
-              <span>🧠</span> Semantic Scholar
-            </a>
-            <a href="https://github.com/Abhijit85/FederatedRAG/tree/SyNAPSE" class="inline-flex items-center gap-2 text-slate-900 hover:underline dark:text-slate-200">
-              <span>🐙</span> GitHub
-            </a>
-            <a href="../index.html#publications" class="inline-flex items-center gap-2 text-amber-600 hover:underline dark:text-amber-300">
-              <span>🏠</span> Overview
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" aria-label="Abhijit Chakraborty, home"><img class="logo logo-light" src="../images/logo-light.png" alt="Abhijit Chakraborty" width="357" height="60"><img class="logo logo-dark" src="../images/logo-dark.png" alt="Abhijit Chakraborty" width="642" height="107"></a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="../index.html#research">Research</a>
+      <a href="../index.html#publications" class="keep">Publications</a>
+      <a href="../index.html#record">Track record</a>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      </button>
+    </nav>
   </div>
-
-  <footer class="border-t border-slate-200 bg-white/70 py-8 text-center text-sm text-slate-500 dark:border-slate-800 dark:bg-slate-950/70 dark:text-slate-400">
-    © 2025 Abhijit Chakraborty. All rights reserved.
-  </footer>
-
+</header>
+<main class="wrap">
+  <article class="paper">
+    <a class="crumb" href="../index.html#publications">All publications</a>
+    <h1>Federated Retrieval-Augmented Generation: A Systematic Mapping Study</h1>
+    <p class="pub-authors"><span class="me">Abhijit Chakraborty</span>, Chahana Dahal, Vivek Gupta</p>
+    <p class="pub-venue"><span class="venue">Findings of the Association for Computational Linguistics: EMNLP 2025, pages 7362–7374</span><span class="tag peer">Peer reviewed</span></p>
+    <ul class="links"><li><a href="https://aclanthology.org/2025.findings-emnlp.388.pdf">PDF</a></li><li><a href="https://aclanthology.org/2025.findings-emnlp.388/">ACL Anthology</a></li><li><a href="https://arxiv.org/abs/2505.18906">arXiv</a></li><li><a href="https://github.com/Abhijit85/FederatedRAG">Code</a></li></ul>
+    <h2>Summary</h2>
+    <p>Federated RAG combines two ideas. Federated learning trains models across parties without moving their raw data, and retrieval-augmented generation (RAG) grounds a language model's output in retrieved documents. This paper is the first systematic mapping study of the area, covering work published from 2020 to 2025.</p>
+    <p>Following evidence-based software engineering guidelines, we classified each paper by research focus, contribution type and application domain, then traced architectural patterns and how the field changed over time. Three open problems kept coming up: retrieval that preserves privacy, differences between clients, and the limits of current evaluation. They matter most in privacy-sensitive domains such as healthcare, finance and personal assistants.</p>
+    <p>The full abstract is on <a href="https://aclanthology.org/2025.findings-emnlp.388/">ACL Anthology</a>.</p>
+    <h2>Related work from this project</h2>
+    <ul class="points">
+      <li><a href="https://arxiv.org/abs/2602.00911">SYNAPSE: Federated Tool Routing via Typed Compendium Artifacts</a></li>
+      <li><a href="https://arxiv.org/abs/2609.06815">Typed Federated Artifacts for the Agentic Web</a></li>
+    </ul>
+    <h2>Cite</h2>
+    <pre class="bib" id="bib">@inproceedings{chakraborty-etal-2025-federated,
+  title     = {Federated Retrieval-Augmented Generation: A Systematic Mapping Study},
+  author    = {Chakraborty, Abhijit and Dahal, Chahana and Gupta, Vivek},
+  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2025},
+  year      = {2025},
+  pages     = {7362--7374},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2025.findings-emnlp.388/}
+}</pre>
+    <button class="copy" type="button" data-target="bib">Copy BibTeX</button>
+  </article>
+</main>
+<footer class="site-footer solo"><div class="wrap"><span>© 2026 Abhijit Chakraborty</span><a href="../index.html">Home</a></div></footer>
+<script src="../assets/site.js"></script>
 </body>
 </html>

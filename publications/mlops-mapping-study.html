@@ -2,99 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Machine Learning Operations: A Mapping Study | Abhijit Chakraborty</title>
-  <meta name="description" content="Machine Learning Operations: A Mapping Study — publication overview with abstract, key takeaways, and resources by Abhijit Chakraborty and collaborators.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MLOps mapping study | Abhijit Chakraborty</title>
+  <meta name="description" content="Systematic mapping study of challenges across the MLOps data, model-building and deployment pipelines, with tool-agnostic recommendations. CSCE 2024.">
   <link rel="canonical" href="https://abhijit85.github.io/publications/mlops-mapping-study.html">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'ui-sans-serif', 'system-ui']
-          }
-        }
-      }
-    };
-  </script>
+  <meta property="og:title" content="Machine Learning Operations: A Mapping Study">
+  <meta property="og:description" content="Systematic mapping study of challenges across the MLOps data, model-building and deployment pipelines, with tool-agnostic recommendations. CSCE 2024.">
+  <meta property="og:type" content="article">
+  <meta name="citation_title" content="Machine Learning Operations: A Mapping Study">
+  <meta name="citation_author" content="Abhijit Chakraborty">
+  <meta name="citation_author" content="Suddhasvatta Das">
+  <meta name="citation_author" content="Kevin Gary">
+  <meta name="citation_publication_date" content="2024">
+  <meta name="citation_arxiv_id" content="2409.19416">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2409.19416">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="icon" type="image/png" href="../images/logo-light.png">
+  <script>try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}</script>
 </head>
-<body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
-  <div class="relative overflow-hidden">
-    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-blue-100 via-white to-emerald-100 opacity-70 dark:from-slate-900 dark:via-slate-950 dark:to-emerald-950"></div>
-
-    <header class="border-b border-slate-200 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/70">
-      <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
-        <a href="../index.html" class="text-sm font-semibold text-blue-600 hover:underline dark:text-blue-300">← Back to Home</a>
-      </div>
-    </header>
-
-    <main class="mx-auto max-w-5xl px-6 py-12 sm:py-16">
-      <section class="mb-12 space-y-6">
-        <span class="inline-flex items-center gap-2 rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-blue-700 dark:bg-blue-900/40 dark:text-blue-200">CSCE 2024 · Research Paper</span>
-        <h1 class="text-3xl font-semibold leading-tight sm:text-4xl">Machine Learning Operations: A Mapping Study</h1>
-        <p class="text-base text-slate-600 dark:text-slate-300">
-          Abhijit Chakraborty, et al.
-        </p>
-        <p class="max-w-3xl text-lg text-slate-700 dark:text-slate-300">
-          Comprehensive synthesis of how enterprises operationalize machine learning across deployment, observability, governance, and compliance. The study distills patterns across Fortune 500 and high-regulation environments to provide practical guidance for MLOps teams.
-        </p>
-      </section>
-
-      <section class="grid gap-8 rounded-3xl border border-slate-200 bg-white/80 p-8 shadow-sm backdrop-blur dark:border-slate-700 dark:bg-slate-900/70">
-        <div>
-          <h2 class="text-xl font-semibold">Abstract</h2>
-          <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
-            We survey modern MLOps tooling and processes across industries with high regulatory pressure. The mapping identifies maturity models for model deployment, CI/CD, data governance, and monitoring. We highlight organizational patterns that enable trustworthy, production-grade machine learning in complex enterprises.
-          </p>
-        </div>
-
-        <div>
-          <h2 class="text-xl font-semibold">Key Takeaways</h2>
-          <ul class="mt-3 space-y-3 text-sm text-slate-600 dark:text-slate-300">
-            <li class="flex items-start gap-3">
-              <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
-              <span>Identifies four maturity archetypes for ML deployment pipelines and explains the engineering investments required to progress between them.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
-              <span>Emphasizes observability, lineage, and human-in-the-loop review as critical safeguards for compliant AI systems.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
-              <span>Provides a playbook for aligning product, data science, and platform teams around SLAs and operational KPIs.</span>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 class="text-xl font-semibold">Resources</h2>
-          <div class="mt-3 flex flex-wrap gap-4 text-sm font-semibold">
-            <a href="https://arxiv.org/pdf/2409.19416" class="inline-flex items-center gap-2 text-blue-600 hover:underline dark:text-blue-300">
-              <span>📄</span> PDF
-            </a>
-            <a href="https://arxiv.org/abs/2409.19416" class="inline-flex items-center gap-2 text-blue-600 hover:underline dark:text-blue-300">
-              <span>📚</span> arXiv
-            </a>
-            <a href="https://www.semanticscholar.org/paper/2409.19416" class="inline-flex items-center gap-2 text-indigo-600 hover:underline dark:text-indigo-300">
-              <span>🧠</span> Semantic Scholar
-            </a>
-            <a href="../index.html#publications" class="inline-flex items-center gap-2 text-amber-600 hover:underline dark:text-amber-300">
-              <span>🏠</span> Overview
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" aria-label="Abhijit Chakraborty, home"><img class="logo logo-light" src="../images/logo-light.png" alt="Abhijit Chakraborty" width="357" height="60"><img class="logo logo-dark" src="../images/logo-dark.png" alt="Abhijit Chakraborty" width="642" height="107"></a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="../index.html#research">Research</a>
+      <a href="../index.html#publications" class="keep">Publications</a>
+      <a href="../index.html#record">Track record</a>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      </button>
+    </nav>
   </div>
-
-  <footer class="border-t border-slate-200 bg-white/70 py-8 text-center text-sm text-slate-500 dark:border-slate-800 dark:bg-slate-950/70 dark:text-slate-400">
-    © 2025 Abhijit Chakraborty. All rights reserved.
-  </footer>
-
+</header>
+<main class="wrap">
+  <article class="paper">
+    <a class="crumb" href="../index.html#publications">All publications</a>
+    <h1>Machine Learning Operations: A Mapping Study</h1>
+    <p class="pub-authors"><span class="me">Abhijit Chakraborty</span>, Suddhasvatta Das, Kevin Gary</p>
+    <p class="pub-venue"><span class="venue">CSCE 2024 (World Congress in Computer Science, Computer Engineering &amp; Applied Computing)</span><span class="tag peer">Peer reviewed</span></p>
+    <ul class="links"><li><a href="https://arxiv.org/pdf/2409.19416">PDF</a></li><li><a href="https://arxiv.org/abs/2409.19416">arXiv</a></li></ul>
+    <h2>Abstract</h2>
+    <blockquote><p>Machine learning and AI have been recently embraced by many companies. Machine Learning Operations, (MLOps), refers to the use of continuous software engineering processes, such as DevOps, in the deployment of machine learning models to production. Nevertheless, not all machine learning initiatives successfully transition to the production stage owing to the multitude of intricate factors involved. This article discusses the issues that exist in several components of the MLOps pipeline, namely the data manipulation pipeline, model building pipeline, and deployment pipeline. A systematic mapping study is performed to identify the challenges that arise in the MLOps system categorized by different focus areas. Using this data, realistic and applicable recommendations are offered for tools or solutions that can be used for their implementation. The main value of this work is it maps distinctive challenges in MLOps along with the recommended solutions outlined in our study. These guidelines are not specific to any particular tool and are applicable to both research and industrial settings.</p></blockquote>
+    <h2>Follow-up</h2>
+    <p>TIMEGATE (CATS workshop, ICML 2026) builds on this with time-boxed promotion gates for continual model updates under a fixed compute budget.</p>
+    <h2>Cite</h2>
+    <pre class="bib" id="bib">@misc{chakraborty2024mlops,
+  title         = {Machine Learning Operations: A Mapping Study},
+  author        = {Chakraborty, Abhijit and Das, Suddhasvatta and Gary, Kevin},
+  year          = {2024},
+  eprint        = {2409.19416},
+  archivePrefix = {arXiv},
+  note          = {CSCE 2024}
+}</pre>
+    <button class="copy" type="button" data-target="bib">Copy BibTeX</button>
+  </article>
+</main>
+<footer class="site-footer solo"><div class="wrap"><span>© 2026 Abhijit Chakraborty</span><a href="../index.html">Home</a></div></footer>
+<script src="../assets/site.js"></script>
 </body>
 </html>

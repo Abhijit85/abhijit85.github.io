@@ -1,573 +1,619 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abhijit Chakraborty | AI Researcher & Solutions Architect</title>
-
-  <!-- ==================== SEO & Identity Meta Tags ==================== -->
-  <meta name="description" content="Official personal website of Abhijit Chakraborty — Researcher, Partner Solutions Architect at MongoDB, and academic contributor in Knowledge Graphs, Federated RAG, and Multimodal Reasoning.">
-  <meta name="keywords" content="Abhijit Chakraborty, Abhijit Chakraborty MongoDB, Abhijit Chakraborty Research, Knowledge Graphs, RAG, AI, NeurIPS, ACL, EMNLP, ICLR">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abhijit Chakraborty</title>
+  <meta name="description" content="Abhijit Chakraborty leads partner solutions architecture for cloud partnerships at MongoDB and is a PhD candidate at Arizona State University's CoRAL Lab, working on federated retrieval, tool routing for LLM agents and checking model output.">
   <meta name="author" content="Abhijit Chakraborty">
-  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://abhijit85.github.io/">
 
-  <!-- Open Graph / Social Cards -->
-  <meta property="og:title" content="Abhijit Chakraborty | Researcher & Solutions Architect">
-  <meta property="og:description" content="Personal academic website of Abhijit Chakraborty — Research in AI, Knowledge Graphs, and Federated Systems.">
+  <meta property="og:title" content="Abhijit Chakraborty">
+  <meta property="og:description" content="How AI agents retrieve from data and tools they don't own, and how they decide when not to answer.">
   <meta property="og:url" content="https://abhijit85.github.io/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://abhijit85.github.io/assets/profile.jpg">
+  <meta property="og:type" content="profile">
+  <meta property="og:image" content="https://abhijit85.github.io/images/abhi1.jpeg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@ChakInsights">
+  <link rel="icon" type="image/png" href="images/logo-light.png">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Abhijit Chakraborty | AI Research & Federated RAG">
-  <meta name="twitter:description" content="Official personal academic homepage of Abhijit Chakraborty.">
-  <meta name="twitter:image" content="https://abhijit85.github.io/assets/profile.jpg">
-  <meta name="twitter:site" content="@abhichakraborty">
-
-  <!-- ==================== Schema.org Person Markup ==================== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Abhijit Chakraborty",
-    "alternateName": "Abhichakraborty",
     "url": "https://abhijit85.github.io/",
-    "image": "https://abhijit85.github.io/assets/profile.jpg",
-    "jobTitle": "Solutions Architect, MongoDB | Researcher, Arizona State University",
-    "affiliation": [
-      {
-        "@type": "Organization",
-        "name": "MongoDB"
-      },
-      {
-        "@type": "CollegeOrUniversity",
-        "name": "Arizona State University"
-      }
+    "image": "https://abhijit85.github.io/images/abhi1.jpeg",
+    "jobTitle": "Manager, Partner Solutions Architect, Cloud Partnerships",
+    "worksFor": { "@type": "Organization", "name": "MongoDB" },
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "Arizona State University" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Arizona State University" },
+      { "@type": "CollegeOrUniversity", "name": "West Bengal University of Technology" }
     ],
     "sameAs": [
-      "https://www.linkedin.com/in/abhichakraborty",
+      "https://scholar.google.com/citations?user=H_rluhMAAAAJ",
+      "https://aclanthology.org/people/abhijit-chakraborty/",
       "https://github.com/Abhijit85",
-      "https://scholar.google.com/citations?user=XXXX",
-      "https://x.com/abhichakraborty",
-      "https://www.mongodb.com/",
-      "https://research.asu.edu/"
+      "https://www.linkedin.com/in/abhijitchak/",
+      "https://x.com/ChakInsights",
+      "https://medium.com/@abhijit.chak"
     ],
-    "knowsAbout": [
-      "Knowledge Graph Embeddings",
-      "Retrieval-Augmented Generation",
-      "Federated Learning",
-      "AI Systems Design",
-      "Multi-Agent Reasoning"
-    ],
-    "description": "Official personal website of Abhijit Chakraborty, AI researcher and Solutions Architect at MongoDB, focusing on knowledge graphs, federated RAG, and interpretable AI."
+    "knowsAbout": ["Retrieval-augmented generation", "Federated learning", "Tool routing for LLM agents", "Hallucination detection", "Knowledge graph completion", "Text-to-SQL", "MLOps", "Cloud partnerships"]
   }
   </script>
 
-  <!-- ==================== Tailwind & Fonts ==================== -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
   <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
-          },
-        },
-      },
-    };
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-  </style>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
-  <body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors">
-    <header class="sticky top-0 z-50 border-b border-slate-200 bg-slate-50/90 dark:border-slate-800 dark:bg-slate-950/90 backdrop-blur">
-      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-5 sm:px-6">
-        <a href="#hero" class="flex items-center">
-          <img src="images/abhijit-logo-light.png" alt="Abhijit Chakraborty Logo" class="h-12 w-auto rounded-full border border-slate-200 shadow-sm dark:hidden" />
-          <img src="images/abhijit-logo-dark.png" alt="Abhijit Chakraborty Logo (Dark)" class="hidden h-12 w-auto rounded-full border border-slate-800 shadow-sm dark:block" />
-        </a>
-        <div class="flex items-center">
-          <nav class="hidden items-center gap-6 text-sm font-medium text-slate-600 md:flex dark:text-slate-300">
-            <a href="#hero" class="hover:text-slate-900 dark:hover:text-white">About</a>
-            <a href="#experience" class="hover:text-slate-900 dark:hover:text-white">Experience</a>
-            <a href="#research-focus" class="hover:text-slate-900 dark:hover:text-white">Research</a>
-            <a href="#projects" class="hover:text-slate-900 dark:hover:text-white">Projects</a>
-            <a href="#publications" class="hover:text-slate-900 dark:hover:text-white">Publications</a>
-            <a href="#contact" class="hover:text-slate-900 dark:hover:text-white">Contact</a>
-          </nav>
+<header class="site-header">
+  <div class="wrap">
+    <a href="#top" aria-label="Abhijit Chakraborty, home">
+      <img class="logo logo-light" src="images/logo-light.png" alt="Abhijit Chakraborty" width="357" height="60">
+      <img class="logo logo-dark" src="images/logo-dark.png" alt="Abhijit Chakraborty" width="642" height="107">
+    </a>
+    <nav class="site-nav" aria-label="Sections">
+      <a href="#research">Research</a>
+      <a href="#publications" class="keep">Publications</a>
+      <a href="#record">Track record</a>
+      <a href="#industry">Experience</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ======================= Hero ======================= -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <h1>Abhijit Chakraborty</h1>
+          <p class="thesis">I study how AI agents retrieve from data and tools they don't own, and how they decide when not to answer.</p>
+          <ul class="roles">
+            <li><b>Manager, Partner Solutions Architect, Cloud Partnerships</b> at MongoDB. I run the technical side of MongoDB's North America relationship with AWS and work with the Azure and Google Cloud teams.</li>
+            <li><b>PhD candidate</b> at Arizona State University's <a href="https://coral-lab-asu.github.io">CoRAL Lab</a>, advised by Vivek Gupta.</li>
+          </ul>
+          <ul class="links">
+            <li><a class="primary" href="mailto:abhijit.chakraborty@asu.edu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a></li>
+            <li><a href="https://scholar.google.com/citations?user=H_rluhMAAAAJ&amp;hl=en"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zm-6.5 9.6V16c0 1.9 2.9 3.5 6.5 3.5s6.5-1.6 6.5-3.5v-3.4L12 16.2l-6.5-3.6z"/></svg>Google Scholar</a></li>
+            <li><a href="https://www.linkedin.com/in/abhijitchak/"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5z"/></svg>LinkedIn</a></li>
+            <li><a href="https://github.com/Abhijit85"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>GitHub</a></li>
+            <li><a href="https://x.com/ChakInsights"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.2-8.3L1.8 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg>X</a></li>
+            <li><a href="https://medium.com/@abhijit.chak"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><ellipse cx="7" cy="12" rx="6" ry="6.2"/><ellipse cx="16.6" cy="12" rx="3" ry="5.8"/><ellipse cx="21.6" cy="12" rx="1.1" ry="5.2"/></svg>Medium</a></li>
+            <li><a href="Abhijit_Chakraborty_resume_Updated.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg>CV</a></li>
+          </ul>
+        </div>
+        <div class="hero-photo">
+          <img class="portrait" src="images/abhi1.jpeg" alt="Portrait of Abhijit Chakraborty" width="496" height="620">
         </div>
       </div>
-    </header>
 
-    <main class="mx-auto max-w-6xl space-y-20 px-4 pb-24 pt-12 sm:px-6 sm:pt-16">
-      <section id="hero" class="grid gap-12 md:grid-cols-[3fr,2fr] md:items-center">
-        <div class="space-y-6">
-          <p class="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500 dark:text-slate-400">AI Research · Solutions Architecture · Ph.D. Candidate</p>
-          <p class="max-w-2xl text-lg text-slate-600 dark:text-slate-300">
-            I’m <strong>Abhijit Chakraborty</strong>, Technical Sales Director at <a href="https://www.mongodb.com" class="text-blue-600 hover:underline dark:text-blue-400">MongoDB</a> and a Ph.D. researcher at <a href="https://coral-lab-asu.github.io" class="text-blue-600 hover:underline dark:text-blue-400">Arizona State University</a>. I partner with global enterprises to design production-grade knowledge graph, RAG, and multi-agent systems, while contributing research on frameworks for secure, interpretable AI.
-          </p>
-          <div class="flex flex-wrap gap-3">
-            <a href="mailto:abhijit.chakraborty@asu.edu" class="rounded-full bg-slate-900 px-5 py-2 text-sm font-semibold text-white shadow-sm hover:-translate-y-0.5 hover:shadow-md transition dark:bg-white dark:text-slate-900">Say Hello</a>
-            <a href="Abhijit_Chakraborty_resume_Updated.pdf" class="rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-200 dark:hover:bg-slate-800">Download CV</a>
-          </div>
-          <div class="flex flex-wrap items-center gap-4 text-slate-600 dark:text-slate-300">
-            <a href="https://www.linkedin.com/in/abhijitchak/" target="_blank" aria-label="LinkedIn" class="text-xl hover:text-slate-900 dark:hover:text-white">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/Abhijit85?tab=repositories" target="_blank" aria-label="GitHub" class="text-xl hover:text-slate-900 dark:hover:text-white">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://x.com/ChakInsights" target="_blank" aria-label="X (Twitter)" class="text-xl hover:text-slate-900 dark:hover:text-white">
-              <i class="fab fa-x-twitter"></i>
-            </a>
-            <a href="https://scholar.google.com/citations?user=H_rluhMAAAAJ&hl=en&authuser=1" target="_blank" aria-label="Google Scholar" class="text-xl hover:text-slate-900 dark:hover:text-white">
-              <i class="fas fa-graduation-cap"></i>
-            </a>
-            <a href="https://medium.com/@abhijit.chak" target="_blank" aria-label="Medium" class="text-xl hover:text-slate-900 dark:hover:text-white">
-              <i class="fab fa-medium"></i>
-            </a>
-          </div>
-        </div>
-        <div class="relative mx-auto max-w-sm">
-          <div class="absolute -inset-4 rounded-3xl bg-gradient-to-br from-blue-200 via-purple-200 to-pink-200 blur-xl dark:from-blue-900/60 dark:via-fuchsia-900/40 dark:to-emerald-900/30"></div>
-          <div class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl dark:border-slate-700/60 dark:bg-slate-900">
-            <img src="images/abhi1.jpeg" alt="Portrait of Abhijit Chakraborty" class="h-full w-full object-cover" />
-            <div class="border-t border-slate-200 bg-slate-50 p-4 text-sm dark:border-slate-700 dark:bg-slate-900">
-              <p class="font-semibold">Currently in San Francisco</p>
-              <p class="text-slate-500 dark:text-slate-400">Helping customers shape AI product roadmaps at scale.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <!-- Figure 1: the loop most of the papers study. Boxes link to the matching research thread. -->
+      <figure class="fig" aria-labelledby="fig1-cap">
+        <div class="fig-frame">
+          <svg class="fig-desktop" viewBox="0 0 1000 240" role="img" aria-labelledby="fig1-title">
+            <title id="fig1-title">A question goes to one of three sources: tool catalogs, enterprise databases, or other organizations' data. The system checks what it retrieved, then answers with sources or abstains.</title>
+            <path class="f-line" d="M180 120 C240 120 240 37 300 37 M180 120 L300 120 M180 120 C240 120 240 203 300 203"/>
+            <path class="f-line" d="M530 37 C565 37 565 120 600 120 M530 120 L600 120 M530 203 C565 203 565 120 600 120"/>
+            <path class="f-line" d="M800 120 C815 120 815 57 830 57"/>
+            <path class="f-abstain" d="M800 120 C815 120 815 183 830 183"/>
+            <path class="f-route draw" id="route" pathLength="1" d="M180 120 L300 120 M530 120 L600 120 M800 120 C815 120 815 57 830 57"/>
 
-      <section id="experience" class="space-y-10">
-        <div class="grid gap-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:grid-cols-3 dark:border-slate-700 dark:bg-slate-900/70">
+            <g class="node-static">
+              <rect class="f-box" x="10" y="90" width="170" height="60" rx="6"/>
+              <text class="f-label" x="24" y="115">A question</text>
+              <text class="f-sub" x="24" y="134">from a person or an agent</text>
+            </g>
+
+            <a class="node" href="#t-retrieval" data-route="top" aria-label="Tool catalogs: SYNAPSE and Typed Federated Artifacts">
+              <rect class="f-box" x="300" y="10" width="230" height="54" rx="6"/>
+              <text class="f-label" x="314" y="32">Tool catalogs</text>
+              <text class="f-paper" x="314" y="51">SYNAPSE, Typed Fed. Artifacts</text>
+            </a>
+            <a class="node on" href="#t-retrieval" data-route="mid" aria-label="Enterprise databases: JoinGR and DeALOG">
+              <rect class="f-box" x="300" y="93" width="230" height="54" rx="6"/>
+              <text class="f-label" x="314" y="115">Enterprise databases</text>
+              <text class="f-paper" x="314" y="134">JoinGR, DeALOG</text>
+            </a>
+            <a class="node" href="#t-retrieval" data-route="bot" aria-label="Other organizations' data: Federated RAG survey">
+              <rect class="f-box" x="300" y="176" width="230" height="54" rx="6"/>
+              <text class="f-label" x="314" y="198">Other organizations' data</text>
+              <text class="f-paper" x="314" y="217">Federated RAG survey</text>
+            </a>
+            <a class="node" href="#t-trust" data-route="check" aria-label="Check the output: OSCAR, CaRE and EviSearch">
+              <rect class="f-box" x="600" y="90" width="200" height="60" rx="6"/>
+              <text class="f-label" x="614" y="115">Check the output</text>
+              <text class="f-paper" x="614" y="134">OSCAR, CaRE, EviSearch</text>
+            </a>
+            <g class="node on" data-end="answer">
+              <rect class="f-box" x="830" y="30" width="165" height="54" rx="6"/>
+              <text class="f-label" x="844" y="62">Answer with sources</text>
+            </g>
+            <a class="node" href="#t-trust" data-route="abstain" aria-label="Abstain or escalate: ongoing work">
+              <rect class="f-box" x="830" y="156" width="165" height="54" rx="6"/>
+              <text class="f-label" x="844" y="178">Abstain or escalate</text>
+              <text class="f-paper" x="844" y="197">ongoing work</text>
+            </a>
+          </svg>
+
+          <svg class="fig-mobile" viewBox="0 0 340 430" role="img" aria-labelledby="fig1m-title">
+            <title id="fig1m-title">A question goes to one of three sources, the system checks the result, and then answers with sources or abstains.</title>
+            <path class="f-line" d="M20 50 V270 M20 95 H40 M20 155 H40 M20 215 H40"/>
+            <path class="f-abstain" d="M260 320 V360"/>
+            <path class="f-route" d="M20 50 V155 H40 M20 155 V270 M80 320 V360"/>
+            <rect class="f-box" x="0" y="0" width="340" height="50" rx="6"/>
+            <text class="f-label" x="14" y="22">A question</text>
+            <text class="f-sub" x="14" y="39">from a person or an agent</text>
+            <a class="node" href="#t-retrieval"><rect class="f-box" x="40" y="72" width="300" height="46" rx="6"/>
+              <text class="f-label" x="54" y="92">Tool catalogs</text>
+              <text class="f-paper" x="54" y="109">SYNAPSE, Typed Fed. Artifacts</text></a>
+            <a class="node on" href="#t-retrieval"><rect class="f-box" x="40" y="132" width="300" height="46" rx="6"/>
+              <text class="f-label" x="54" y="152">Enterprise databases</text>
+              <text class="f-paper" x="54" y="169">JoinGR, DeALOG</text></a>
+            <a class="node" href="#t-retrieval"><rect class="f-box" x="40" y="192" width="300" height="46" rx="6"/>
+              <text class="f-label" x="54" y="212">Other organizations' data</text>
+              <text class="f-paper" x="54" y="229">Federated RAG survey</text></a>
+            <a class="node" href="#t-trust"><rect class="f-box" x="0" y="270" width="340" height="50" rx="6"/>
+              <text class="f-label" x="14" y="292">Check the output</text>
+              <text class="f-paper" x="14" y="309">OSCAR, CaRE, EviSearch</text></a>
+            <g class="node on"><rect class="f-box" x="0" y="360" width="160" height="56" rx="6"/>
+              <text class="f-label" x="14" y="384">Answer with</text>
+              <text class="f-label" x="14" y="402">sources</text></g>
+            <a class="node" href="#t-trust"><rect class="f-box" x="180" y="360" width="160" height="56" rx="6"/>
+              <text class="f-label" x="194" y="384">Abstain or escalate</text>
+              <text class="f-paper" x="194" y="402">ongoing work</text></a>
+          </svg>
+        </div>
+        <figcaption id="fig1-cap"><b>Fig. 1.</b> Most of my papers study one step of this loop. An agent chooses where to look among sources it doesn't control, checks what it retrieved, and then answers with sources or hands the question back. Paper names show where each one sits. Point at a source to trace its route, or select any box to read about that step.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ======================= News ======================= -->
+  <section class="section" id="news" aria-labelledby="news-h">
+    <div class="wrap">
+      <div class="row section-top"><div class="label"><h2 id="news-h">News</h2></div></div>
+      <div class="row news-item"><div class="label"><time>Upcoming</time></div><div class="main">At AWS re:Invent 2026 I'm co-presenting a breakout session on agent state and memory with Amazon Bedrock and MongoDB Atlas.</div></div>
+      <div class="row news-item"><div class="label"><time datetime="2026-10">Oct 2026</time></div><div class="main">New preprint: <a href="https://arxiv.org/abs/2610.01064">JoinGR</a> finds the tables a text-to-SQL question never names by walking the database's join graph.</div></div>
+      <div class="row news-item"><div class="label"><time datetime="2026-09">Sep 2026</time></div><div class="main">Posted <a href="https://arxiv.org/abs/2609.06815">Typed Federated Artifacts for the Agentic Web</a>, with Ni Trieu and Vivek Gupta.</div></div>
+      <div class="row news-item"><div class="label"><time datetime="2026">2026</time></div><div class="main">EMNLP 2026 accepted two of our papers: <a href="https://arxiv.org/abs/2602.00996">DeALOG</a>, and a survey of trajectory self-feedback in diffusion language models.</div></div>
+      <div class="row news-item"><div class="label"><time datetime="2026">2026</time></div><div class="main"><a href="https://arxiv.org/abs/2604.01624">OSCAR</a> will appear at COLM 2026.</div></div>
+      <div class="row news-item"><div class="label"><time datetime="2026">2026</time></div><div class="main">We demoed <a href="https://aclanthology.org/2026.acl-demo.52/">JobMatchAI</a> in the ACL 2026 System Demonstrations track.</div></div>
+      <div class="row news-item"><div class="label"><time datetime="2026">2026</time></div><div class="main">TimeGate was presented at the CATS workshop at ICML 2026.</div></div>
+      <div class="row news-item"><div class="label"><time datetime="2025">2025</time></div><div class="main">Our <a href="https://aclanthology.org/2025.findings-emnlp.388/">Federated RAG mapping study</a> appeared in Findings of EMNLP 2025.</div></div>
+    </div>
+  </section>
+
+  <!-- ======================= Research ======================= -->
+  <section class="section" id="research" aria-labelledby="research-h">
+    <div class="wrap">
+      <div class="row section-top">
+        <div class="label"><h2 id="research-h">Research</h2></div>
+        <div class="main">
+          <p>Most enterprise AI systems depend on data and tools that other teams or organizations own. My papers ask what agents can share in that setting without moving raw data, how they find the right source, and how they check what comes back. I came to the PhD after fifteen years of building data platforms.</p>
+        </div>
+      </div>
+
+      <article class="row thread" id="t-retrieval">
+        <div class="label">
+          <h3>Retrieval and tool routing across distributed sources</h3>
+          <p class="q">Where should an agent look, and what can agents share?</p>
+        </div>
+        <div class="main">
+          <p>Federated retrieval is where this started. Our <a href="publications/federated-rag.html">mapping study</a> in Findings of EMNLP 2025 covers the work from 2020 to 2025 that combines federated learning with retrieval-augmented generation.</p>
+          <p><a href="https://arxiv.org/abs/2602.00911">SYNAPSE</a> and <a href="https://arxiv.org/abs/2609.06815">Typed Federated Artifacts</a> carry the idea over to tool routing. Agents share what they have learned about which tool suits which request, packaged as schema-checked objects instead of model weights. That lets agents running different frozen LLMs use the same knowledge. On StableToolBench the federated setup was within 1.1 points of a centralized baseline.</p>
+          <p>Even inside one database, the right table can be hard to find. <a href="https://arxiv.org/abs/2610.01064">JoinGR</a> follows foreign-key joins to reach tables a question never mentions, and on the BEAVER enterprise benchmark it raised perfect recall@15 from 0.339 to 0.645. In <a href="https://arxiv.org/abs/2602.00996">DeALOG</a> (EMNLP 2026), specialist agents for text, tables and images coordinate through a shared log, with no central controller.</p>
+        </div>
+        <aside class="note"><span class="who">At MongoDB</span>My AWS re:Invent 2026 session is about the production version of this problem: agent state and memory on Atlas with Amazon Bedrock.</aside>
+      </article>
+
+      <article class="row thread" id="t-trust">
+        <div class="label">
+          <h3>Checking model output</h3>
+          <p class="q">How does a system check its own answer, and when should a person take over?</p>
+        </div>
+        <div class="main">
+          <p><a href="https://arxiv.org/abs/2604.01624">OSCAR</a> (COLM 2026) looks for hallucinations inside diffusion language models. It runs several denoising chains in parallel, treats the positions where they disagree as suspect, and rewrites those positions using retrieved evidence.</p>
+          <p>Evaluation needs the same scrutiny. For <a href="https://arxiv.org/abs/2607.24763">CaRE</a> we re-ran seven remasking strategies for masked diffusion models on twelve models under matched compute. Sampling temperature explained most of the variation (η² = 0.91). Once compute was matched, the strategy rankings reversed.</p>
+          <p><a href="https://arxiv.org/abs/2604.14165">EviSearch</a> keeps a person in the loop. It links every value it pulls from a clinical trial paper to its source and sends uncertain cells to a reviewer. On its own it was 91.7% accurate; after a reviewer checked 15.6% of the cells, accuracy reached 95.2%.</p>
+          <p>My current work is on selective prediction for knowledge graph completion: when a model can certify a prediction, and when it should abstain.</p>
+        </div>
+      </article>
+
+      <article class="row thread" id="t-structure">
+        <div class="label">
+          <h3>Structured knowledge</h3>
+          <p class="q">How much model does a knowledge graph need?</p>
+        </div>
+        <div class="main">
+          <p>For link prediction, less than recent work assumes. <a href="publications/relate.html">RelatE</a> is a real-valued phase-modulus embedding that matches or beats complex-valued and deep models on standard benchmarks (MRR 0.521 on YAGO3-10). It also trains 24% faster than RotatE and uses 22% less GPU memory.</p>
+          <p><a href="https://aclanthology.org/2026.acl-demo.52/">JobMatchAI</a> (ACL 2026 System Demonstrations) uses knowledge graphs and semantic search to match candidates to jobs, and explains each match.</p>
+        </div>
+        <aside class="note"><span class="who">Venture</span>JobMatchAI is also a company I co-founded out of CoRAL Lab, with Mayank Vyas and Vivek Gupta.</aside>
+      </article>
+
+      <article class="row thread" id="t-mlops">
+        <div class="label">
+          <h3>Running ML in production</h3>
+          <p class="q">Why do models stall between prototype and production?</p>
+        </div>
+        <div class="main">
+          <p>The <a href="publications/mlops-mapping-study.html">MLOps mapping study</a> (CSCE 2024) catalogs what stops ML projects in the data, model-building and deployment pipelines, and recommends a tool-agnostic fix for each. TimeGate (CATS workshop, ICML 2026) adds time-boxed promotion gates for models retrained continually on a fixed compute budget.</p>
+        </div>
+        <aside class="note"><span class="who">Background</span>Before the PhD I built data pipelines and warehouses for Oracle, Cisco, Union Pacific and British Telecom.</aside>
+      </article>
+    </div>
+  </section>
+
+  <!-- ======================= Publications ======================= -->
+  <section class="section" id="publications" aria-labelledby="pubs-h">
+    <div class="wrap">
+      <div class="row section-top">
+        <div class="label"><h2 id="pubs-h">Publications</h2></div>
+        <div class="span">
+          <p>Peer-reviewed papers are marked. <a href="https://scholar.google.com/citations?user=H_rluhMAAAAJ&amp;hl=en">Google Scholar</a> has the same list with citation counts.</p>
+          <div class="filters" role="group" aria-label="Filter publications" style="margin-top:14px">
+            <button type="button" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="peer" aria-pressed="false">Peer reviewed</button>
+            <button type="button" data-filter="retrieval" aria-pressed="false">Retrieval and routing</button>
+            <button type="button" data-filter="trust" aria-pressed="false">Checking output</button>
+            <button type="button" data-filter="structure" aria-pressed="false">Structured knowledge</button>
+            <button type="button" data-filter="mlops" aria-pressed="false">ML in production</button>
+          </div>
+          <p class="pub-count" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <div class="row pub-year">
+        <div class="label"><p class="year">2026</p></div>
+        <div class="span">
+          <ul class="pubs">
+            <li class="pub" data-tags="retrieval trust peer">
+              <div class="pub-body">
+                <a class="pub-title" href="https://arxiv.org/abs/2602.00996">DeALOG: Decentralized Multi-Agents Log-Mediated Reasoning Framework</a>
+                <p class="pub-authors"><span class="me">A. Chakraborty</span>, A. R. Shekhar, S. Agarwal, V. Gupta</p>
+                <p class="pub-note">Table, text, visual and verification agents coordinate through a shared natural-language log. Evaluated on six QA benchmarks, including FinQA, TAT-QA and MultiModalQA.</p>
+                <p class="pub-links"><a href="https://arxiv.org/abs/2602.00996">arXiv</a><a href="https://arxiv.org/pdf/2602.00996">PDF</a></p>
+              </div>
+              <div class="pub-meta"><span class="venue">EMNLP 2026</span><span class="tag peer">Peer reviewed</span></div>
+            </li>
+            <li class="pub" data-tags="trust peer">
+              <div class="pub-body">
+                <span class="pub-title">Trajectory Self-Feedback in Diffusion Language Models</span>
+                <p class="pub-authors">Y. Shah, <span class="me">A. Chakraborty</span>, V. Gupta</p>
+                <!-- TODO: add arXiv link when available -->
+              </div>
+              <div class="pub-meta"><span class="venue">EMNLP 2026</span><span class="tag peer">Peer reviewed</span> <span class="tag">Survey</span></div>
+            </li>
+            <li class="pub" data-tags="trust peer">
+              <div class="pub-body">
+                <a class="pub-title" href="https://arxiv.org/abs/2604.01624">OSCAR: Orchestrated Self-verification and Cross-path Refinement</a>
+                <p class="pub-authors">Y. Shah, <span class="me">A. Chakraborty</span>, N. K. Devulapally, V. Lokhande, V. Gupta</p>
+                <p class="pub-note">Finds likely hallucinations in diffusion LMs from cross-chain entropy across parallel denoising chains, then repairs them with retrieved evidence.</p>
+                <p class="pub-links"><a href="https://arxiv.org/abs/2604.01624">arXiv</a><a href="https://arxiv.org/pdf/2604.01624">PDF</a></p>
+              </div>
+              <div class="pub-meta"><span class="venue">COLM 2026</span><span class="tag peer">Peer reviewed</span></div>
+            </li>
+            <li class="pub" data-tags="structure peer">
+              <div class="pub-body">
+                <a class="pub-title" href="https://aclanthology.org/2026.acl-demo.52/">JobMatchAI: An Intelligent Job Matching Platform Using Knowledge Graphs, Semantic Search and Explainable AI</a>
+                <p class="pub-authors">M. Vyas, <span class="me">A. Chakraborty</span>, V. Gupta</p>
+                <p class="pub-links"><a href="https://aclanthology.org/2026.acl-demo.52/">ACL Anthology</a><a href="https://arxiv.org/abs/2603.14558">arXiv</a></p>
+              </div>
+              <div class="pub-meta"><span class="venue">ACL 2026 System Demonstrations</span><span class="tag peer">Peer reviewed</span></div>
+            </li>
+            <li class="pub" data-tags="mlops peer">
+              <div class="pub-body">
+                <span class="pub-title">TIMEGATE: Sustainable Time-Boxed Promotion Gates for Continual ML Adaptation Under Resource Constraints</span>
+                <p class="pub-authors"><span class="me">A. Chakraborty</span>, S. Das, Y. Shah, V. Gupta, K. Gary</p>
+              </div>
+              <div class="pub-meta"><span class="venue">CATS Workshop, ICML 2026</span><span class="tag">Workshop</span></div>
+            </li>
+            <li class="pub" data-tags="retrieval">
+              <div class="pub-body">
+                <a class="pub-title" href="https://arxiv.org/abs/2610.01064">JoinGR: Learning to Traverse Join Graphs for Table Retrieval</a>
+                <p class="pub-authors">S. De, <span class="me">A. Chakraborty</span>, S. Bandyopadhyay, V. Gupta</p>
+                <p class="pub-note">Combines dense retrieval with query-conditioned traversal of the join graph. Perfect recall@15 on BEAVER rises from 0.339 to 0.645.</p>
+                <p class="pub-links"><a href="https://arxiv.org/abs/2610.01064">arXiv</a><a href="https://arxiv.org/pdf/2610.01064">PDF</a></p>
+              </div>
+              <div class="pub-meta"><span class="venue">arXiv:2610.01064</span><span class="tag">Preprint</span></div>
+            </li>
+            <li class="pub" data-tags="retrieval">
+              <div class="pub-body">
+                <a class="pub-title" href="https://arxiv.org/abs/2609.06815">Typed Federated Artifacts for the Agentic Web: Sharing Tool-Routing Knowledge Across Frozen, Heterogeneous LLM Agents</a>
+                <p class="pub-authors"><span class="me">A. Chakraborty</span>, N. Trieu, V. Gupta</p>
+                <p class="pub-note">Agents exchange schema-validated objects with per-field privacy and conflict resolution. Within 1.1 points of a centralized baseline on StableToolBench, at 20 MB per round.</p>
+                <p class="pub-links"><a href="https://arxiv.org/abs/2609.06815">arXiv</a><a href="https://arxiv.org/pdf/2609.06815">PDF</a></p>
+              </div>
+              <div class="pub-meta"><span class="venue">arXiv:2609.06815</span><span class="tag">Preprint</span></div>
+            </li>
+            <li class="pub" data-tags="trust">
+              <div class="pub-body">
+                <a class="pub-title" href="https://arxiv.org/abs/2607.24763">CaRE: Compute-aware Remasking Evaluation Protocol for Masked Diffusion Language Models</a>
+                <p class="pub-authors">Y. Shah, <span class="me">A. Chakraborty</span>, V. Gupta</p>
+                <p class="pub-note">Controls for compute, metric choice and sampling temperature. Temperature explains most of the variation, and strategy rankings reverse under matched compute.</p>
+                <p class="pub-links"><a href="https://arxiv.org/abs/2607.24763">arXiv</a><a href="https://arxiv.org/pdf/2607.24763">PDF</a></p>
+              </div>
+              <div class="pub-meta"><span class="venue">arXiv:2607.24763</span><span class="tag">Preprint</span></div>
+            </li>
+            <li class="pub" data-tags="trust">
+              <div class="pub-body">
+                <a class="pub-title" href="https://arxiv.org/abs/2604.14165">EviSearch: A Human in the Loop System for Extracting and Auditing Clinical Evidence for Systematic Reviews</a>
+                <p class="pub-authors">N. Ahuja, <span class="me">A. Chakraborty</span>, M. A. Khan, K. Z. R. Khakwani, M. B. Sonbol, I. B. Riaz, V. Gupta</p>
+                <p class="pub-note">91.7% extraction accuracy on its own; 95.2% after a reviewer checks 15.6% of cells.</p>
+                <p class="pub-links"><a href="https://arxiv.org/abs/2604.14165">arXiv</a><a href="https://arxiv.org/pdf/2604.14165">PDF</a></p>
+              </div>
+              <div class="pub-meta"><span class="venue">arXiv:2604.14165</span><span class="tag">Preprint</span></div>
+            </li>
+            <li class="pub" data-tags="retrieval">
+              <div class="pub-body">
+                <a class="pub-title" href="https://arxiv.org/abs/2602.00911">SYNAPSE: Federated Tool Routing via Typed Compendium Artifacts</a>
+                <p class="pub-authors"><span class="me">A. Chakraborty</span>, Y. Shah, V. Gupta</p>
+                <p class="pub-note">One routing compendium transfers across four LLM families (Llama 3.1 8B, Llama 3.2 3B, Mistral 7B, GPT-4o) and loses about 2 points.</p>
+                <p class="pub-links"><a href="https://arxiv.org/abs/2602.00911">arXiv</a><a href="https://arxiv.org/pdf/2602.00911">PDF</a><a href="https://github.com/Abhijit85/FederatedRAG/tree/SyNAPSE">Code</a></p>
+              </div>
+              <div class="pub-meta"><span class="venue">arXiv:2602.00911</span><span class="tag">Preprint</span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row pub-year">
+        <div class="label"><p class="year">2025</p></div>
+        <div class="span">
+          <ul class="pubs">
+            <li class="pub" data-tags="retrieval peer">
+              <div class="pub-body">
+                <a class="pub-title" href="publications/federated-rag.html">Federated Retrieval-Augmented Generation: A Systematic Mapping Study</a>
+                <p class="pub-authors"><span class="me">A. Chakraborty</span>, C. Dahal, V. Gupta</p>
+                <p class="pub-links"><a href="https://aclanthology.org/2025.findings-emnlp.388/">ACL Anthology</a><a href="https://aclanthology.org/2025.findings-emnlp.388.pdf">PDF</a><a href="https://arxiv.org/abs/2505.18906">arXiv</a><a href="publications/federated-rag.html">Paper page</a></p>
+              </div>
+              <div class="pub-meta"><span class="venue">Findings of EMNLP 2025, pp. 7362–7374</span><span class="tag peer">Peer reviewed</span></div>
+            </li>
+            <li class="pub" data-tags="structure">
+              <div class="pub-body">
+                <a class="pub-title" href="publications/relate.html">Is Architectural Complexity Overrated? Competitive and Interpretable Knowledge Graph Completion with RelatE</a>
+                <p class="pub-authors"><span class="me">A. Chakraborty</span>, C. Dahal, A. Balasubramaniam, T. Anvekar, V. Gupta</p>
+                <p class="pub-links"><a href="https://arxiv.org/abs/2505.18971">arXiv</a><a href="https://arxiv.org/pdf/2505.18971">PDF</a><a href="https://github.com/Abhijit85/TransEE">Code</a><a href="publications/relate.html">Paper page</a></p>
+              </div>
+              <div class="pub-meta"><span class="venue">arXiv:2505.18971</span><span class="tag">Preprint</span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row pub-year">
+        <div class="label"><p class="year">2024</p></div>
+        <div class="span">
+          <ul class="pubs">
+            <li class="pub" data-tags="mlops peer">
+              <div class="pub-body">
+                <a class="pub-title" href="publications/mlops-mapping-study.html">Machine Learning Operations: A Mapping Study</a>
+                <p class="pub-authors"><span class="me">A. Chakraborty</span>, S. Das, K. Gary</p>
+                <p class="pub-links"><a href="https://arxiv.org/abs/2409.19416">arXiv</a><a href="https://arxiv.org/pdf/2409.19416">PDF</a><a href="publications/mlops-mapping-study.html">Paper page</a></p>
+              </div>
+              <div class="pub-meta"><span class="venue">CSCE 2024</span><span class="tag peer">Peer reviewed</span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= Track record (blue band) ======================= -->
+  <section class="band" id="record" aria-labelledby="record-h">
+    <div class="wrap">
+      <div class="row section-top">
+        <div class="label"><h2 id="record-h">Track record</h2></div>
+        <div class="main"><p>Outside the lab I have spent nearly two decades building teams and closing enterprise work, from data engineering at British Telecom to cloud partnerships at MongoDB.</p></div>
+      </div>
+      <div class="ledger-grid">
+        <div class="ledger">
+          <h3>Revenue and savings</h3>
+          <ul>
+            <li><div class="fig-num">$4.9M<small>three-year deal</small></div><p>US telecom customer that adopted Atlas as the embedding and memory layer for its Amazon Bedrock applications.<span class="src">MongoDB</span></p></li>
+            <li><div class="fig-num">$1.25M<small>closed</small></div><p>Media and entertainment project on Atlas.<span class="src">MongoDB</span></p></li>
+            <li><div class="fig-num">$1.2M<small>in six months</small></div><p>New account for Cisco's newly acquired WebEx, delivered by an India team I built.<span class="src">SRS Consulting</span></p></li>
+            <li><div class="fig-num">$750K<small>saved per year</small></div><p>Moved reporting from Business Objects to Oracle BI and CRM; reports also ran 15% faster.<span class="src">British Telecom</span></p></li>
+            <li><div class="fig-num">$250K<small>saved per year</small></div><p>Led the Oracle-to-Teradata migration for Cisco analytics.<span class="src">Infosys Consulting</span></p></li>
+          </ul>
+        </div>
+        <div class="ledger">
+          <h3>Teams built and led</h3>
+          <ul>
+            <li><div class="fig-num">2 → 20<small>in twelve months</small></div><p>Grew the delivery team (3 onshore, 17 offshore), which led to the onsite role running the account.<span class="src">British Telecom</span></p></li>
+            <li><div class="fig-num">0 → 10<small>in six months</small></div><p>Hired the India team for Cisco WebEx. Nobody left.<span class="src">SRS Consulting</span></p></li>
+            <li><div class="fig-num">20 + 4<small>engineers, managers</small></div><p>Led the group delivering OCI Autonomous Database work and a serverless point-of-sale system.<span class="src">Oracle, next-generation OCI</span></p></li>
+            <li><div class="fig-num">3 regions<small>enablement</small></div><p>Took train-the-trainer partner enablement from North America to India and ANZ; Vietnam is in discussion.<span class="src">MongoDB</span></p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= Experience ======================= -->
+  <section class="section" id="industry" aria-labelledby="industry-h">
+    <div class="wrap">
+      <div class="row section-top"><div class="label"><h2 id="industry-h">Experience</h2></div></div>
+
+      <div class="row role">
+        <div class="label">2022 – now</div>
+        <div class="main">
+          <h3>Manager, Partner Solutions Architect, Cloud Partnerships <span class="org">MongoDB</span></h3>
+          <p>I own the technical relationship with AWS across North America and work with the Azure and Google Cloud teams. The job is to design the architectures, run the enablement and shape the joint plays that turn a partnership into named accounts and deals we can trace.</p>
+          <ul>
+            <li>An earlier proposal to put MongoDB in the short-term memory of Amazon Bedrock AgentCore was turned down. I reframed it around long-term memory, and AWS's AgentCore team then invited MongoDB in as one of the first ISV partners in the memory layer.</li>
+            <li>Co-presenting an accepted AWS re:Invent 2026 breakout on agent state and memory. It is the first breakout approved for members of MongoDB's partner team.</li>
+            <li>Built a claims-processing agent demo and workshop (S3 Tables and Aurora for retrieval, Bedrock for inference). MongoDB and AWS partner leadership approved it, and I presented it at MongoDB .local New York.</li>
+            <li>Account work includes a healthcare supply-chain customer that ranked among North America's top revenue models two quarters running, a global payment-gateway migration across North America, EMEA and APAC, and an app-modernization win against an AWS-first pitch.</li>
+            <li>Much of the role is leading people who don't report to me. I automated the AWS Skill Badge integration that AWS marketing now uses at events, run a biweekly technical partner community with members in India, LATAM, Singapore and APAC, recruited AWS technical champions, and wrote the field playbook for partnership deals.</li>
+            <li>Field leaders in the West, Canada, East and enterprise regions invite me to present partner wins in their team meetings. Atlas feature requests I raised with product management are now prioritized.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row role">
+        <div class="label">Ongoing</div>
+        <div class="main">
+          <h3>Co-founder <span class="org">JobMatchAI</span></h3>
+          <p>An explainable job-matching venture built on CoRAL Lab research, with Mayank Vyas and Vivek Gupta.</p>
+        </div>
+      </div>
+
+      <div class="row role">
+        <div class="label">2015 – 2022</div>
+        <div class="main">
+          <h3>Senior Manager and Engineering Lead, Next-Generation OCI <span class="org">Oracle</span></h3>
+          <ul>
+            <li>Joined as an individual contributor building DevOps tooling and distributed data platforms for Oracle Cloud Applications. Automated ETL across millions of rows, which cut manual work by 33%, and kept pipelines from five transactional sources at 99.9% uptime.</li>
+            <li>Moved to the next-generation OCI team and led 20 engineers and 4 managers on OCI Autonomous Database work and a serverless point-of-sale system.</li>
+            <li>Built the integration framework from Vertica on AWS to Salesforce Marketing Cloud (Lambda, EC2, S3, SQS) and the real-time Informatica MDM to Salesforce API behind the automated marketing campaigns. Designed the division's BI warehouse on Data Vault and Kimball models.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row role">
+        <div class="label">2014 – 2015</div>
+        <div class="main">
+          <h3>Senior Data Engineer Lead, Freight Data Platform <span class="org">ProKarma for Union Pacific</span></h3>
+          <p>Took on a new line of business to open up freight operations data. Driver, linesman and track events streamed into Vertica at 2,000 events a second through Oracle GoldenGate change data capture. I also moved legacy ColdFusion reporting to Oracle Sales CRM and built the real-time monitoring front end.</p>
+        </div>
+      </div>
+
+      <div class="row role">
+        <div class="label">2011 – 2014</div>
+        <div class="main">
+          <h3>Lead Business Value Consultant, then Engagement Lead <span class="org">SRS Consulting and Infosys Consulting, for Cisco and AC Nielsen</span></h3>
+          <ul>
+            <li>SRS Consulting, a startup serving Cisco, asked me to set up an India team for the newly acquired WebEx. Within six months the team had ten people, the account passed $1.2M in revenue, and nobody had left.</li>
+            <li>Infosys Consulting then hired me into its business value consulting practice, where I grew the manufacturing and analytics domains and brought in new clients, including AC Nielsen and Jaguar Land Rover.</li>
+            <li>Led the Oracle-to-Teradata migration for Cisco analytics, saving $250K a year in maintenance. Also cut vendor-data pipeline errors by 7%, sped up BI queries by 10%, and localized reports, which raised BI adoption by 7%.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row role">
+        <div class="label">2007 – 2011</div>
+        <div class="main">
+          <h3>Data Engineer, then Delivery Lead <span class="org">British Telecom</span></h3>
+          <ul>
+            <li>Grew the delivery team from 2 to 20 people in twelve months and moved onsite to lead and grow the account.</li>
+            <li>Led the move from Business Objects to Oracle BI and CRM, which saved $750K a year and made reporting 15% faster. Built the ETL platform for web apps with 10,000 daily active users ($85K a year saved in vendor costs) and the Orange Wholesale BI warehouse, which scaled to 115,000 daily users.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= Talks ======================= -->
+  <section class="section" id="talks" aria-labelledby="talks-h">
+    <div class="wrap">
+      <div class="row section-top"><div class="label"><h2 id="talks-h">Talks</h2></div></div>
+      <div class="row">
+        <div class="main">
+          <ul class="plain-list">
+            <li>AWS re:Invent 2026 <span>breakout session, accepted</span></li>
+            <li>MongoDB .local San Francisco and New York</li>
+            <li>AWS GenAI Loft</li>
+            <li>Mastercard CEO and CTO fireside chat <span>part of an AWS campaign</span></li>
+            <li>LangChain community event</li>
+            <li>US Foods hackathon <span>38 hands-on builders from 102 registrants</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= Service ======================= -->
+  <section class="section" id="service" aria-labelledby="service-h">
+    <div class="wrap">
+      <div class="row section-top"><div class="label"><h2 id="service-h">Service</h2></div></div>
+      <div class="row">
+        <div class="span service service-grid">
           <div>
-            <p class="text-sm uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">Academic</p>
-            <div class="mt-3 flex items-center gap-3">
-              <img src="images/ASU.jpg" alt="Arizona State University logo" class="h-10 w-10 rounded-lg object-cover shadow-sm" />
-              <p class="text-lg font-semibold">Ph.D. Computer Science @ Arizona State University</p>
-            </div>
-            <p class="text-sm text-slate-600 dark:text-slate-300">CoRAL Lab, advised by Dr. Vivek Gupta · Focus on federated RAG & interpretable knowledge graphs.</p>
-          </div>
-          <div>
-            <p class="text-sm uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">Graduate</p>
-            <div class="mt-3 flex items-center gap-3">
-              <img src="images/ASU.jpg" alt="Arizona State University logo" class="h-10 w-10 rounded-lg object-cover shadow-sm" />
-              <p class="text-lg font-semibold">MS Computer Science @ Arizona State University</p>
-            </div>
-            <p class="text-sm text-slate-600 dark:text-slate-300">Hands-on research in multi-modal knowledge reasoning and trustworthy AI systems.</p>
-          </div>
-          <div>
-            <p class="text-sm uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">Undergraduate</p>
-            <div class="mt-3 flex items-center gap-3">
-              <img src="images/Utech.jpg" alt="MAKAUT logo" class="h-10 w-10 rounded-lg object-cover shadow-sm" />
-              <p class="text-lg font-semibold">B.Tech Electrical Engineering @ MAKAUT, India</p>
-            </div>
-            <p class="text-sm text-slate-600 dark:text-slate-300">Foundation in signal processing, power systems, and embedded computing.</p>
-          </div>
-        </div>
-        <div class="flex flex-col gap-2">
-          <h2 class="text-2xl font-semibold">Current Roles & Experience</h2>
-          <p class="text-slate-600 dark:text-slate-300">
-            Nearly two decades of experience delivering data platforms, enterprise applications, and AI solutions across Fortune 500 teams.
-          </p>
-        </div>
-        <div class="space-y-8 border-l border-slate-200 pl-8 dark:border-slate-700">
-          <article class="relative">
-            <span class="absolute -left-[37px] flex h-3 w-3 items-center justify-center">
-              <span class="h-3 w-3 rounded-full border border-slate-300 bg-white dark:border-slate-600 dark:bg-slate-900"></span>
-            </span>
-            <p class="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">2022 — Present</p>
-            <div class="mt-2 flex items-center gap-3">
-              <img src="images/mongo.jpg" alt="MongoDB logo" class="h-10 w-10 rounded-lg object-cover shadow-sm" />
-              <h3 class="text-lg font-semibold">Technical Sales Director, North America @ MongoDB</h3>
-            </div>
-            <p class="text-sm text-slate-600 dark:text-slate-300">
-              Leading go-to-market architecture for AI-native workloads—federated RAG, real-time analytics, and data intelligence—on MongoDB Atlas.
-            </p>
-          </article>
-          <article class="relative">
-            <span class="absolute -left-[37px] flex h-3 w-3 items-center justify-center">
-              <span class="h-3 w-3 rounded-full border border-slate-300 bg-white dark:border-slate-600 dark:bg-slate-900"></span>
-            </span>
-            <p class="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">2015 — 2022</p>
-            <div class="mt-2 flex items-center gap-3">
-              <img src="images/orcl.jpg" alt="Oracle logo" class="h-10 w-10 rounded-lg object-cover shadow-sm" />
-              <h3 class="text-lg font-semibold">Principal Software Development Engineer @ Oracle</h3>
-            </div>
-            <p class="text-sm text-slate-600 dark:text-slate-300">
-              Built large-scale distributed systems, microservices, and customer analytics platforms across Oracle Cloud applications.
-            </p>
-          </article>
-          <article class="relative">
-            <span class="absolute -left-[37px] flex h-3 w-3 items-center justify-center">
-              <span class="h-3 w-3 rounded-full border border-slate-300 bg-white dark:border-slate-600 dark:bg-slate-900"></span>
-            </span>
-            <p class="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">2014 — 2015</p>
-            <div class="mt-2 flex items-center gap-3">
-              <img src="images/prkrm.jpg" alt="Prokarma logo" class="h-10 w-10 rounded-lg object-cover shadow-sm" />
-              <h3 class="text-lg font-semibold">Software Development Engineer @ Prokarma</h3>
-            </div>
-            <p class="text-sm text-slate-600 dark:text-slate-300">
-              Partnered with Fortune 100 clients to modernize enterprise integrations and commerce experiences.
-            </p>
-          </article>
-          <article class="relative">
-            <span class="absolute -left-[37px] flex h-3 w-3 items-center justify-center">
-              <span class="h-3 w-3 rounded-full border border-slate-300 bg-white dark:border-slate-600 dark:bg-slate-900"></span>
-            </span>
-            <p class="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">2007 — 2014</p>
-            <div class="mt-2 flex items-center gap-3">
-              <img src="images/infosys.jpg" alt="Infosys logo" class="h-10 w-10 rounded-lg object-cover shadow-sm" />
-              <h3 class="text-lg font-semibold">Engineering Leadership @ Infosys, SRS Consulting, TCS</h3>
-            </div>
-            <p class="text-sm text-slate-600 dark:text-slate-300">
-              Delivered data engineering and large-scale application modernization for banking, telecom, and retail enterprises.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="research-focus" class="space-y-8">
-        <div class="flex flex-col gap-2">
-          <h2 class="text-2xl font-semibold">Research Focus</h2>
-          <p class="text-slate-600 dark:text-slate-300">Exploring the interface between structured knowledge, large language models, and responsible deployment.</p>
-        </div>
-        <div class="grid gap-6 md:grid-cols-2">
-          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
-            <h3 class="text-lg font-semibold">Knowledge Graph Embeddings</h3>
-            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
-              Designing interpretable embeddings that capture semantics and enable reasoning for enterprise knowledge bases.
-            </p>
-          </div>
-          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
-            <h3 class="text-lg font-semibold">Retrieval-Augmented Generation</h3>
-            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
-              Building weighted and federated RAG systems that adapt to regulated, multi-tenant data environments.
-            </p>
-          </div>
-          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
-            <h3 class="text-lg font-semibold">Federated & Agentic AI Systems</h3>
-            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
-              Developing privacy-preserving, multi-agent orchestration for trustworthy collaboration across data silos.
-            </p>
-          </div>
-          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
-            <h3 class="text-lg font-semibold">Applied AI & Cloud Architectures</h3>
-            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
-              Leveraging MongoDB Atlas and AWS to deliver resilient LLM pipelines, real-time search, and decision intelligence.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="publications" class="space-y-10">
-        <div class="flex flex-col gap-2">
-          <h2 class="text-2xl font-semibold">Publications</h2>
-          <p class="text-slate-600 dark:text-slate-300">Highlights from my research on MLOps, knowledge graphs, and federated retrieval systems.</p>
-        </div>
-
-        <div class="space-y-8">
-          <article class="grid gap-6 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg md:grid-cols-[minmax(200px,240px),1fr] dark:border-slate-700 dark:bg-slate-900/60">
-            <div class="relative overflow-hidden rounded-2xl">
-              <div class="absolute inset-0 bg-gradient-to-br from-emerald-200 via-blue-200 to-indigo-200 dark:from-emerald-900/40 dark:via-blue-900/40 dark:to-indigo-900/40"></div>
-              <div class="relative flex h-full min-h-[200px] flex-col justify-between p-4 text-slate-800 dark:text-slate-100">
-                <span class="text-xs uppercase tracking-[0.3em] text-slate-600 dark:text-slate-300">CSCE 2024</span>
-                <div>
-                  <p class="text-lg font-semibold leading-snug">Machine Learning Operations</p>
-                  <p class="text-sm text-slate-600 dark:text-slate-300">Mapping Study</p>
-                </div>
-                <span class="text-xs font-medium uppercase tracking-[0.3em] text-slate-600 dark:text-slate-300">Publication</span>
-              </div>
-            </div>
-
-            <div class="space-y-4">
-              <div>
-                <h3 class="text-xl font-semibold leading-tight">Machine Learning Operations: A Mapping Study</h3>
-                <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Abhijit Chakraborty, et al.</p>
-              </div>
-              <p class="text-sm text-slate-600 dark:text-slate-300">
-                Comprehensive synthesis of how enterprises operationalize ML models—covering deployment pipelines, monitoring, governance, and reliability patterns across regulated industries.
-              </p>
-              <div class="flex flex-wrap items-center gap-3 text-xs font-medium text-slate-500 dark:text-slate-400">
-                <span class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
-                  <span class="text-[10px]">TLDR</span> Practitioner-focused blueprint for stable, auditable ML operations.
-                </span>
-              </div>
-              <div class="flex flex-wrap items-center gap-5 text-sm font-semibold">
-                <a href="https://arxiv.org/pdf/2409.19416" class="inline-flex items-center gap-2 text-blue-600 hover:underline dark:text-blue-400">
-                  <span>📄</span> PDF
-                </a>
-                <a href="https://arxiv.org/abs/2409.19416" class="inline-flex items-center gap-2 text-blue-600 hover:underline dark:text-blue-400">
-                  <span>📚</span> arXiv
-                </a>
-                <a href="https://www.semanticscholar.org/paper/2409.19416" class="inline-flex items-center gap-2 text-indigo-600 hover:underline dark:text-indigo-300">
-                  <span>🧠</span> Semantic Scholar
-                </a>
-                <a href="publications/mlops-mapping-study.html" class="inline-flex items-center gap-2 text-amber-600 hover:underline dark:text-amber-300">
-                  <span>🏠</span> Website
-                </a>
-                <a href="https://github.com/Abhijit85/abhijit85.github.io" class="inline-flex items-center gap-2 text-slate-900 hover:underline dark:text-slate-200">
-                  <span>🐙</span> GitHub
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="grid gap-6 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg md:grid-cols-[minmax(200px,240px),1fr] dark:border-slate-700 dark:bg-slate-900/60">
-            <div class="relative overflow-hidden rounded-2xl">
-              <div class="absolute inset-0 bg-gradient-to-br from-amber-200 via-orange-200 to-rose-200 dark:from-amber-900/40 dark:via-orange-900/40 dark:to-rose-900/40"></div>
-              <div class="relative flex h-full min-h-[200px] flex-col justify-between p-4 text-slate-800 dark:text-slate-100">
-                <span class="text-xs uppercase tracking-[0.3em] text-slate-600 dark:text-slate-300">arXiv 2025</span>
-                <div>
-                  <p class="text-lg font-semibold leading-snug">RelatE</p>
-                  <p class="text-sm text-slate-600 dark:text-slate-300">Knowledge Graph Completion</p>
-                </div>
-                <span class="text-xs font-medium uppercase tracking-[0.3em] text-slate-600 dark:text-slate-300">Preprint</span>
-              </div>
-            </div>
-
-            <div class="space-y-4">
-              <div>
-                <h3 class="text-xl font-semibold leading-tight">Is Architectural Complexity Overrated? Competitive and Interpretable Knowledge Graph Completion with RelatE</h3>
-                <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Abhijit Chakraborty, et al.</p>
-              </div>
-              <p class="text-sm text-slate-600 dark:text-slate-300">
-                RelatE decomposes knowledge graph embeddings into modulus and phase components, reducing architectural complexity while preserving performance and interpretability.
-              </p>
-              <div class="flex flex-wrap items-center gap-3 text-xs font-medium text-slate-500 dark:text-slate-400">
-                <span class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
-                  <span class="text-[10px]">TLDR</span> Lightweight, interpretable embeddings rivaling state-of-the-art KG models.
-                </span>
-              </div>
-              <div class="flex flex-wrap items-center gap-5 text-sm font-semibold">
-                <a href="https://arxiv.org/pdf/2505.18971" class="inline-flex items-center gap-2 text-blue-600 hover:underline dark:text-blue-400">
-                  <span>📄</span> PDF
-                </a>
-                <a href="https://arxiv.org/abs/2505.18971" class="inline-flex items-center gap-2 text-blue-600 hover:underline dark:text-blue-400">
-                  <span>📚</span> arXiv
-                </a>
-                <a href="https://www.semanticscholar.org/paper/2505.18971" class="inline-flex items-center gap-2 text-indigo-600 hover:underline dark:text-indigo-300">
-                  <span>🧠</span> Semantic Scholar
-                </a>
-                <a href="publications/relate.html" class="inline-flex items-center gap-2 text-amber-600 hover:underline dark:text-amber-300">
-                  <span>🏠</span> Website
-                </a>
-                <a href="https://github.com/Abhijit85/TransEE" class="inline-flex items-center gap-2 text-slate-900 hover:underline dark:text-slate-200">
-                  <span>🐙</span> GitHub
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="grid gap-6 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg md:grid-cols-[minmax(200px,240px),1fr] dark:border-slate-700 dark:bg-slate-900/60">
-            <div class="relative overflow-hidden rounded-2xl">
-              <div class="absolute inset-0 bg-gradient-to-br from-purple-200 via-sky-200 to-cyan-200 dark:from-purple-900/40 dark:via-sky-900/40 dark:to-cyan-900/40"></div>
-              <div class="relative flex h-full min-h-[200px] flex-col justify-between p-4 text-slate-800 dark:text-slate-100">
-                <span class="text-xs uppercase tracking-[0.3em] text-slate-600 dark:text-slate-300">arXiv 2025</span>
-                <div>
-                  <p class="text-lg font-semibold leading-snug">Federated RAG</p>
-                  <p class="text-sm text-slate-600 dark:text-slate-300">Systematic Mapping</p>
-                </div>
-                <span class="text-xs font-medium uppercase tracking-[0.3em] text-slate-600 dark:text-slate-300">Preprint</span>
-              </div>
-            </div>
-
-            <div class="space-y-4">
-              <div>
-                <h3 class="text-xl font-semibold leading-tight">Federated Retrieval-Augmented Generation: A Systematic Mapping Study</h3>
-                <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Abhijit Chakraborty, et al.</p>
-              </div>
-              <p class="text-sm text-slate-600 dark:text-slate-300">
-                Survey of architectures, privacy safeguards, and deployment practices for federated RAG across distributed, compliance-sensitive data environments.
-              </p>
-              <div class="flex flex-wrap items-center gap-3 text-xs font-medium text-slate-500 dark:text-slate-400">
-                <span class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
-                  <span class="text-[10px]">TLDR</span> Design patterns for secure, cross-tenant retrieval and generation.
-                </span>
-              </div>
-              <div class="flex flex-wrap items-center gap-5 text-sm font-semibold">
-                <a href="https://arxiv.org/pdf/2505.18906" class="inline-flex items-center gap-2 text-blue-600 hover:underline dark:text-blue-400">
-                  <span>📄</span> PDF
-                </a>
-                <a href="https://arxiv.org/abs/2505.18906" class="inline-flex items-center gap-2 text-blue-600 hover:underline dark:text-blue-400">
-                  <span>📚</span> arXiv
-                </a>
-                <a href="https://www.semanticscholar.org/paper/2505.18906" class="inline-flex items-center gap-2 text-indigo-600 hover:underline dark:text-indigo-300">
-                  <span>🧠</span> Semantic Scholar
-                </a>
-                <a href="publications/federated-rag.html" class="inline-flex items-center gap-2 text-amber-600 hover:underline dark:text-amber-300">
-                  <span>🏠</span> Website
-                </a>
-                <a href="https://github.com/Abhijit85/FederatedRAG/tree/SyNAPSE" class="inline-flex items-center gap-2 text-slate-900 hover:underline dark:text-slate-200">
-                  <span>🐙</span> GitHub
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="projects" class="space-y-8">
-        <div class="flex flex-col gap-2">
-          <h2 class="text-2xl font-semibold">Selected Projects</h2>
-          <p class="text-slate-600 dark:text-slate-300">Production tooling, research prototypes, and infrastructure that power applied AI systems.</p>
-        </div>
-        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <article class="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-700 dark:bg-slate-900/60">
-            <div class="flex items-start justify-between gap-3">
-              <a href="https://github.com/Abhijit85/ADAF" class="text-sm font-semibold text-blue-600 hover:underline dark:text-blue-300">Abhijit85/ADAF</a>
-              <span class="rounded-full border border-blue-200 px-2.5 py-1 text-xs font-semibold text-blue-600 dark:border-blue-400/40 dark:text-blue-300">Framework</span>
-            </div>
-            <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
-              Modular pipeline for personalized, context-aware table summarization with LLM orchestration and evaluation assets.
-            </p>
-            <div class="mt-6 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-              <div class="flex items-center gap-3">
-                <span class="inline-flex items-center gap-1 rounded-full bg-amber-100 px-2 py-1 font-semibold text-amber-700 dark:bg-amber-900/30 dark:text-amber-300">
-                  <span class="h-2 w-2 rounded-full bg-amber-500"></span> Python
-                </span>
-                <span class="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2 py-1 font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-200">
-                  <span>⭐</span> Active
-                </span>
-              </div>
-              <a href="https://github.com/Abhijit85/ADAF" class="font-semibold text-blue-600 group-hover:underline dark:text-blue-300">GitHub →</a>
-            </div>
-          </article>
-
-          <article class="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-700 dark:bg-slate-900/60">
-            <div class="flex items-start justify-between gap-3">
-              <a href="https://github.com/Abhijit85/TransEE" class="text-sm font-semibold text-blue-600 hover:underline dark:text-blue-300">Abhijit85/TransEE</a>
-              <span class="rounded-full border border-purple-200 px-2.5 py-1 text-xs font-semibold text-purple-600 dark:border-purple-400/40 dark:text-purple-300">Knowledge Graph</span>
-            </div>
-            <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
-              Interpretable knowledge graph completion with RelatE, decomposing embeddings into modulus-phase components for transparent reasoning.
-            </p>
-            <div class="mt-6 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-              <div class="flex items-center gap-3">
-                <span class="inline-flex items-center gap-1 rounded-full bg-purple-100 px-2 py-1 font-semibold text-purple-700 dark:bg-purple-900/30 dark:text-purple-300">
-                  <span class="h-2 w-2 rounded-full bg-purple-500"></span> Python
-                </span>
-                <span class="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2 py-1 font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-200">
-                  <span>⭐</span> Active
-                </span>
-              </div>
-              <a href="https://github.com/Abhijit85/TransEE" class="font-semibold text-blue-600 group-hover:underline dark:text-blue-300">GitHub →</a>
-            </div>
-          </article>
-
-          <article class="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-700 dark:bg-slate-900/60">
-            <div class="flex items-start justify-between gap-3">
-              <a href="https://github.com/Abhijit85/FederatedRAG/tree/SyNAPSE" class="text-sm font-semibold text-blue-600 hover:underline dark:text-blue-300">Abhijit85/FederatedRAG</a>
-              <span class="rounded-full border border-emerald-200 px-2.5 py-1 text-xs font-semibold text-emerald-600 dark:border-emerald-400/40 dark:text-emerald-300">Federated AI</span>
-            </div>
-            <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
-              Framework combining structured relational embeddings with secure retrieval for cross-tenant knowledge sharing and auditability.
-            </p>
-            <div class="mt-6 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-              <div class="flex items-center gap-3">
-                <span class="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-2 py-1 font-semibold text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300">
-                  <span class="h-2 w-2 rounded-full bg-emerald-500"></span> Python
-                </span>
-                <span class="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2 py-1 font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-200">
-                  <span>⭐</span> Active
-                </span>
-              </div>
-              <a href="https://github.com/Abhijit85/FederatedRAG/tree/SyNAPSE" class="font-semibold text-blue-600 group-hover:underline dark:text-blue-300">GitHub →</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="services" class="space-y-8">
-        <div class="flex flex-col gap-2">
-          <h2 class="text-2xl font-semibold">Advisory & Service</h2>
-          <p class="text-slate-600 dark:text-slate-300">Giving back through editorial boards, open-source communities, and peer review.</p>
-        </div>
-        <div class="grid gap-6 md:grid-cols-2">
-          <article class="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
-            <img src="images/hbr.jpg" alt="Harvard Business Review logo" class="h-12 w-12 rounded-lg object-cover" />
-            <div>
-              <h3 class="text-lg font-semibold">Harvard Business Review</h3>
-              <p class="text-sm text-slate-600 dark:text-slate-300">Member, Board of Advisors shaping the future of analytical leadership content.</p>
-            </div>
-          </article>
-          <article class="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
-            <img src="images/apache.jpg" alt="Apache Software Foundation logo" class="h-12 w-12 rounded-lg object-cover" />
-            <div>
-              <h3 class="text-lg font-semibold">Apache Software Foundation</h3>
-              <p class="text-sm text-slate-600 dark:text-slate-300">Open-source contributor focused on data pipelines, governance, and AI enablement.</p>
-            </div>
-          </article>
-          <article class="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
-            <img src="images/neurips.png" alt="NeurIPS logo" class="h-12 w-12 rounded-lg object-cover" />
-            <div>
-              <h3 class="text-lg font-semibold">NeurIPS 2025 Reviewer</h3>
-              <p class="text-sm text-slate-600 dark:text-slate-300">Reviewing submissions on trustworthy AI, federated learning, and retrieval systems.</p>
-            </div>
-          </article>
-          <article class="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
-            <img src="images/emnlp.png" alt="EMNLP logo" class="h-12 w-12 rounded-lg object-cover" />
-            <div>
-              <h3 class="text-lg font-semibold">EMNLP 2025 Reviewer</h3>
-              <p class="text-sm text-slate-600 dark:text-slate-300">Supporting the NLP community with rigorous reviews of applied research.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="news" class="space-y-8">
-        <div class="flex flex-col gap-2">
-          <h2 class="text-2xl font-semibold">Latest News</h2>
-          <p class="text-slate-600 dark:text-slate-300">Selected highlights from the last year.</p>
-        </div>
-        <div class="grid gap-6 md:grid-cols-[2fr,3fr]">
-          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
-            <h3 class="text-sm uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">Milestones</h3>
-            <ul class="mt-4 space-y-4 text-sm text-slate-600 dark:text-slate-300">
-              <li>
-                <p class="font-semibold text-slate-800 dark:text-slate-100">June 1, 2024</p>
-                <p>Paper accepted at <a href="https://american-cse.org/csce2024/" class="text-blue-600 hover:underline dark:text-blue-400">CSCE 2024</a>.</p>
-              </li>
-              <li>
-                <p class="font-semibold text-slate-800 dark:text-slate-100">May 20, 2025</p>
-                <p>Submitted new work on federated RAG to <a href="https://2025.emnlp.org/" class="text-blue-600 hover:underline dark:text-blue-400">EMNLP 2025</a>.</p>
-              </li>
-              <li>
-                <p class="font-semibold text-slate-800 dark:text-slate-100">May 15, 2025</p>
-                <p>Submitted knowledge graph research to <a href="https://neurips.cc/" class="text-blue-600 hover:underline dark:text-blue-400">NeurIPS 2025</a>.</p>
-              </li>
+            <h3>Conference reviewing</h3>
+            <ul>
+              <li><span>NeurIPS</span><span>2025, 2026</span></li>
+              <li><span>ICLR</span><span>2025, 2026</span></li>
+              <li><span>ICML</span><span></span></li>
+              <li><span>AAAI</span><span>2025, 2026</span></li>
+              <li><span>ACL</span><span>2026</span></li>
+              <li><span>EMNLP</span><span>2025, 2026</span></li>
+            </ul>
+            <h3>Journal reviewing</h3>
+            <ul>
+              <li><span>Neurocomputing</span><span></span></li>
             </ul>
           </div>
-          <div class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-6 text-slate-100 shadow-lg dark:border-slate-700 dark:from-slate-800 dark:via-slate-900 dark:to-slate-950">
-            <div>
-              <p class="text-xs uppercase tracking-[0.3em] text-slate-400">Currently Exploring</p>
-              <h3 class="mt-3 text-2xl font-semibold">Federated retrieval infrastructures for enterprise copilots.</h3>
-              <p class="mt-4 text-sm text-slate-300">
-                Designing agentic workflows, governance, and observability patterns so organizations can safely scale AI assistants in regulated industries.
-              </p>
-            </div>
-            <a id="contact" href="mailto:abhijit.chakraborty@asu.edu" class="mt-6 inline-flex items-center justify-center rounded-full bg-white px-5 py-2 text-sm font-semibold text-slate-900 hover:-translate-y-0.5 hover:shadow-lg transition">
-              Collaborate →
-            </a>
+          <div>
+            <h3>Workshops</h3>
+            <ul>
+              <li><span>SurgeLLM</span><span>Program committee</span></li>
+              <li><span>DocuInsight</span><span>Program committee</span></li>
+              <li><span>Agentic Web, NeurIPS</span><span>Reviewer</span></li>
+            </ul>
+            <h3>Other</h3>
+            <ul>
+              <li><span>Harvard Business Review</span><span>Board of Advisors</span></li>
+              <li><span>Apache Software Foundation</span><span>Contributor</span></li>
+            </ul>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
+  </section>
 
-    <footer class="border-t border-slate-200 bg-slate-100/70 py-8 text-center text-sm text-slate-500 dark:border-slate-800 dark:bg-slate-950/80 dark:text-slate-400">
-      © 2025 Abhijit Chakraborty · Built with HTML & Tailwind CSS · Always learning.
-    </footer>
+  <!-- ======================= Education ======================= -->
+  <section class="section" id="education" aria-labelledby="edu-h">
+    <div class="wrap">
+      <div class="row section-top"><div class="label"><h2 id="edu-h">Education</h2></div></div>
+      <div class="row">
+        <div class="main">
+          <ul class="edu">
+            <li><b>PhD, Computer Science</b>, Arizona State University<span>CoRAL Lab, advised by Vivek Gupta. Dean's List.</span></li>
+            <li><b>MS, Computer Science (Big Data Systems)</b>, Arizona State University<span>Gold Medal, summa cum laude</span></li>
+            <li><b>BTech, Electrical Engineering</b>, West Bengal University of Technology (MAKAUT)</li>
+          </ul>
+          <p class="sub-h" style="margin-top:22px">Certifications</p>
+          <p style="color:var(--muted)">Oracle Certified Associate (Database Management); Oracle Certified Specialist (Database Development and Optimization); Oracle PartnerNetwork Certified Specialist (BI Technologies).</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  </body>
+  <!-- ======================= Contact (blue band) ======================= -->
+  <section class="band contact-band" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div class="row section-top"><div class="label"><h2 id="contact-h">Contact</h2></div></div>
+      <div class="row">
+        <div class="main">
+          <p class="big">Research collaborations, talks, and partner work on AI with MongoDB Atlas.</p>
+          <p>Email <a href="mailto:abhijit.chakraborty@asu.edu">abhijit.chakraborty@asu.edu</a> for research and student projects. For partner or customer conversations, reach me on <a href="https://www.linkedin.com/in/abhijitchak/">LinkedIn</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Abhijit Chakraborty</span>
+    <span>Views here are my own, not those of MongoDB or Arizona State University.</span>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
 </html>
